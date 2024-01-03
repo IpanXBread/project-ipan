@@ -1,0 +1,84 @@
+import React, { useState } from 'react';
+import Modal from './Modal';
+import '../css/styles.css';
+
+export default function Home_Education() {
+    const [modalOpen, setModalOpen] = useState(false);
+    const [selectedLevel, setSelectedLevel] = useState('');
+
+    const handleViewGradeButton = (level) => {
+        setSelectedLevel(level);
+        setModalOpen(true);
+    }
+
+    const closeModal = () => {
+        setModalOpen(false);
+    }
+
+    return (
+        <div className='education'>
+            {/* Title */}
+            <h1 className="font-bold">EDUCATION</h1>
+
+            {/* Sort By Row For Each Education */}
+            <div className="horizontal space-evenly padding-left-right ">
+                {/* SMKDABB */}
+                <div className="gray-box-education">
+                    <div className="smkdabb"></div>
+                    <h2 className="centered" style={{ textAlign: 'center' }}>SMK Dato' Abu Bakar Baginda</h2>
+                    <div className="centered light-gray-box">
+                        <h3>2014 ~ 2018</h3>
+                    </div>
+
+                    <div className="make-it-bottom">
+                        <h4 style={{ fontWeight: 'lighter' }}>SPM: 4A 4B 1C</h4>
+                    </div>
+
+                    <div className="centered">
+                        <div class="download-button rajdhani" onClick={() => handleViewGradeButton("sijil_spm")}>
+                            <p className="one-line">View Grade</p>                        </div>
+                    </div>
+                </div>
+
+                {/* KMS */}
+                <div className="gray-box-education">
+                    <div className="kms"></div>
+                    <h2 className="centered" style={{ textAlign: 'center' }}>Kolej Matrikulasi Selangor</h2>
+                    <div className="centered light-gray-box">
+                        <h3>2019 ~ 2020</h3>
+                    </div>
+
+                    <div className="make-it-bottom">
+                        <h4 style={{ fontWeight: 'lighter', marginBottom: '-15px' }}>CGPA: 3.79</h4>
+                        <h4 style={{ fontWeight: 'lighter' }}>MUET: Band 4</h4>
+                    </div>
+
+                    <div className="centered">
+                        <div class="download-button rajdhani" onClick={() => handleViewGradeButton("sijil_matrik")}>
+                            <p className="one-line">View Grade</p>                        </div>
+                    </div>
+                </div>
+
+                {/* UKM */}
+                <div className="gray-box-education">
+                    <div className="UKM2"></div>
+                    <h2 className="centered" style={{ textAlign: 'center' }}>Universiti Kebangsaan Malaysia</h2>
+                    <div className="centered light-gray-box">
+                        <h3>2020 ~ 2024</h3>
+                    </div>
+                    <div className="make-it-bottom">
+                        <h4 style={{ fontWeight: 'lighter', marginBottom: '-15px' }}>Bachelor's Degree in Computer Science</h4>
+                        <h4 style={{ fontWeight: 'lighter' }}>PNGK: 3.48</h4>
+                    </div>
+                    <div className="centered">
+                        <div class="download-button rajdhani" onClick={() => handleViewGradeButton("grade_uni")}>
+                            <p className="one-line">View Grade</p>                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            {/* Modal */}
+            {modalOpen && <Modal level={selectedLevel} closeModal={closeModal} />}
+        </div>
+    );
+}

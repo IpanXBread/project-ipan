@@ -1,0 +1,785 @@
+/* Relate to everything */
+/* Default styles (dark mode) */
+:root {
+  --text-color: rgb(219, 232, 243);
+  --text-less-color: rgba(219, 232, 243, 0.76);
+  --background-color: rgb(4, 10, 14);
+  --background-transparent-color: rgba(26, 26, 26, 0.582);
+  --primary-color: #216F79;
+  --primary-shadow-color: rgba(33, 74, 80, 0.541);
+  --secondary-color: rgb(9, 23, 32);
+  --tertiary-color: #0b2b31;
+  --shadow-color: rgba(0, 0, 0, 0.4);
+  --high-shadow-color: rgba(0, 0, 0, 0.7);
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* Light mode */
+body.light-mode {
+  --text-color: rgb(4, 10, 14);
+  --text-less-color: rgba(4, 10, 14, 0.644);
+  --background-color: rgb(219, 232, 243);
+  --background-transparent-color: rgba(219, 232, 243, 0.568);
+  --primary-color: #216F79;
+  --secondary-color: rgb(82, 113, 134);
+  --tertiary-color: #248a9c;
+  --shadow-color: rgba(255, 255, 255, 0.4);
+  --high-shadow-color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* Custom Font */
+
+@font-face {
+  font-family: 'Josefin Sans Regular';
+  /* 14 types */
+  src: url('../../public/Josefin_Sans/static/JosefinSans-Regular.ttf') format('truetype');
+  /* Add additional font weights and styles if needed */
+}
+
+@font-face {
+  font-family: 'Montserrat Regular';
+  /* 2 types */
+  src: url('../../public/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Chakra Petch Regular';
+  /* 10 types */
+  src: url('../../public/Chakra_Petch/ChakraPetch-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Major Mono Display Regular';
+  src: url('../../public/Major_Mono_Display/MajorMonoDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Quicksand Regular';
+  src: url('../../public/Quicksand/Quicksand-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rajdhani Regular';
+  /* 5 types */
+  src: url('../../public/Rajdhani/Rajdhani-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway Regular';
+  /* 2 types */
+  src: url('../../public/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Tilt Prism Regular';
+  src: url('../../public/Tilt_Prism/TiltPrism-Regular-VariableFont_XROT\,YROT.ttf') format('truetype');
+}
+
+.josefin-sans {
+  font-family: 'Josefin Sans Regular';
+}
+
+.montserrat {
+  font-family: 'Montserrat Regular';
+}
+
+.chakra-petch {
+  font-family: 'Chakra Petch Regular';
+}
+
+.major-mono {
+  font-family: 'Major Mono Display Regular';
+}
+
+.quicksand {
+  font-family: 'Quicksand Regular';
+}
+
+.rajdhani {
+  font-family: 'Rajdhani Regular';
+}
+
+.raleway {
+  font-family: 'Raleway Regular';
+}
+
+.tilt-prism {
+  font-family: 'Tilt Prism Regular';
+}
+
+/* Text */
+/* <p> , <h1> ~ <h6> */
+.super-big-text {
+  font-size: 50px;
+}
+
+.big-text-up {
+  font-size: 25px;
+  margin-top: -55px;
+}
+
+.big-text {
+  font-size: 40px;
+}
+
+.normal-text-size {
+  font-size: 20px;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.text-less-color {
+  color: var(--text-less-color);
+}
+
+/* Box & Container */
+
+.reset {
+  text-decoration: none;
+}
+
+/* Header */
+
+.header-container {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.center-horizontal {
+  display: flex;
+  justify-content: center;
+}
+
+.center-vertical {
+  align-items: center;
+}
+
+/* Footer */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px -5px 15px var(--high-shadow-color);
+  z-index: 10000;
+}
+
+/* 
+.footer-item {
+  display: inline-block;
+} */
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+}
+
+.space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Icon */
+
+.icon {
+  margin-top: 6px;
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-bottom: 1px;
+}
+
+.icon-link {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.icon-link:hover {
+  color: var(--text-color);
+}
+
+
+/* Buttons */
+.download-button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 10px 58px;
+  border-radius: 51px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: background-color 0.4s;
+  font-size: 20px;
+}
+
+.download-button:hover {
+  background: linear-gradient(to bottom, #176370, #4cf3e5);
+}
+
+.download-button p {
+  margin: 0;
+}
+
+.download-cv {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  font-weight: bold;
+  padding: 0px 30px 0px 30px;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+  width: fit-content;
+}
+
+.download-cv:hover {
+  background: linear-gradient(to bottom, #176370, #4cf3e5);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.work-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 600px;
+}
+
+/* General */
+
+.unscrollable {
+  overflow: hidden;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  background-color: var(--text-color);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: row;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+.container-x {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  height: 400px;
+  width: 400px;
+  margin-left: -15rem;
+}
+
+.gray-box-education {
+  background-color: var(--shadow-color);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  height: auto;
+}
+
+.gray-box-image {
+  background-color: var(--shadow-color);
+  padding: 5px;
+  margin-top: -30px;
+  max-width: 70%;
+  max-height: 90%;
+  border-radius: 10px;
+  height: auto;
+}
+
+.gray-box-certificate {
+  background-color: var(--shadow-color);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  min-width: 70%;
+  height: auto;
+}
+
+.front-box {
+  background-color: var(--background-color);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  padding: 0px 40px 0px 40px;
+}
+
+.front-box:nth-child(1) {
+  top: 700px;
+}
+
+.front-box:nth-child(2) {
+  top: 1100px;
+}
+
+.front-box:nth-child(3) {
+  top: 1400px;
+}
+
+.front-box:nth-child(4) {
+  top: 1800px;
+}
+
+.front-box:nth-child(5) {
+  top: 2100px;
+}
+
+.front-box:nth-child(6) {
+  top: 2200px;
+}
+
+.front-box:nth-child(7) {
+  top: 2500px;
+}
+
+.front-box:nth-child(8) {
+  top: 2800px;
+}
+
+.front-box:nth-child(9) {
+  top: 3100px;
+}
+
+.front-box:nth-child(10) {
+  top: 3400px;
+}
+
+.vertical-line {
+  height: 100%;
+  width: 2px;
+  background-color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.vertical-long-line {
+  height: 1800px;
+  width: 2px;
+  background-color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.light-gray-box {
+  background: rgba(91, 101, 103, 0.3);
+  margin: 0 -20px 0 -20px !important;
+}
+
+.black-box {
+  background: #010203;
+}
+
+.spacer {
+  height: 400px;
+}
+
+.padding-left-right {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.make-it-bottom {
+  min-height: 75px;
+  max-height: 75px;
+}
+
+.text-alignment-left {
+  padding-left: 22%;
+}
+
+.container-test {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.div-box {
+  height: auto;
+  width: auto;
+  margin: 100px 100px 100px 100px;
+  padding: 20px 20px 20px 20px;
+  background-color: var(--primary-color);
+}
+
+/* Home Page */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin-bottom: -90px;
+}
+
+.education {
+  height: auto;
+  margin-bottom: 100px;
+  width: auto;
+  background-color: var(--primary-shadow-color);
+  padding: 20px 30px 20px 50px;
+  box-shadow: 0px -15px 10px var(--shadow-color);
+}
+
+.smkdabb {
+  background-image: url('C:\Users\User\project-ipan\src\images\smkdabb.png');
+  padding: 90px;
+  margin-top: 0px !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.kms {
+  background-image: url('C:\Users\User\project-ipan\src\images\kms.png');
+  padding: 100px;
+  margin-bottom: -20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.UKM {
+  background-image: url('C:\Users\User\project-ipan\src\images\UKM.png');
+  padding: 150px;
+  margin-bottom: -120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.UKM2 {
+  background-image: url('C:\Users\User\project-ipan\src\images\UKM_white.png');
+  padding: 150px;
+  margin-bottom: -120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.UKM3 {
+  background-image: url('C:\Users\User\project-ipan\src\images\UKM_white.png');
+  padding: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.minecraft {
+  background-image: url('C:\Users\User\project-ipan\src\images\minecraft.png');
+  padding: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.close-button {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Work Page */
+
+.work-title {
+  transition: font-size 0.3s ease;
+  cursor: pointer;
+}
+
+.work-title:hover {
+  font-size: 20px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--shadow-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal {
+  background: var(--background-color);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: -40px;
+  box-shadow: 0px 0px 10px var(--shadow-color);
+  width: auto;
+  max-width: 50%;
+  height: auto;
+  max-height: 85%;
+  z-index: 10000;
+}
+
+.modal-work {
+  background: var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: -40px;
+    box-shadow: 0px 0px 10px var(--shadow-color);
+    width: auto;
+    height: auto;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+}
+
+.modal-close {
+  display: flex;
+  justify-content: end;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: end;
+}
+
+.modal-work-header {
+  display: flex;
+  justify-content: center;
+}
+
+.close-button {
+  cursor: pointer;
+}
+
+.modal-content {
+  margin-top: 20px;
+}
+
+.finexus {
+  background-image: url('C:\Users\User\project-ipan\src\images\finexus.png');
+  padding: 90px;
+  margin-top: 0px !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.petronas {
+  background-image: url('C:\Users\User\project-ipan\src\images\petronas.png');
+  padding: 90px;
+  margin-top: 0px !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.gray-hidden-text {
+  color: var(--text-less-color);
+}
+
+/* Project Page */
+
+.white-text {
+  color: var(--text-color);
+}
+
+.left-container {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 50px;
+}
+
+.left-square {
+  background-color: var(--secondary-color);
+  height: auto;
+  width: calc(35% - 20px);
+  padding: 20px;
+  z-index: 5;
+}
+
+.middle-left-square {
+  background-color: var(--tertiary-color);
+  height: auto;
+  width: calc(20% - 25px);
+  padding-right: 2rem;
+  margin-left: -50px;
+  margin-top: 50px;
+  margin-bottom: auto;
+  padding-left: 4rem;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  z-index: 4;
+}
+
+.square-big-text {
+  font-size: 30px;
+  margin-bottom: -15px;
+  margin-top: 10px;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  padding-bottom: 50px;
+}
+
+.right-square {
+  background-color: var(--secondary-color);
+  height: auto;
+  width: calc(35% - 20px);
+  padding: 20px;
+  z-index: 5;
+}
+
+.middle-right-square {
+  background-color: var(--tertiary-color);
+  height: auto;
+  width: calc(20% - 25px);
+  padding-right: 5rem;
+  margin-left: auto;
+  margin-right: -60px;
+  margin-top: 50px;
+  margin-bottom: auto;
+  border-radius: 25px;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  z-index: 4;
+}
+
+.align-left {}
+
+.align-right {
+  padding-left: 70px;
+}
+
+.position-container {
+  padding-left: 25px;
+  margin-top: -20px;
+}
+
+.one-line {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* SKills */
+
+.padding-left {
+  padding-left: 10px;
+}
+
+.horizontal-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.skills-container {
+  background-color: var(--tertiary-color);
+  padding-left: 25px;
+  margin-top: -20px;
+  padding: 10px;
+  margin: 10px;
+  height: 230px;
+}
+
+/* Parallax */
+
+.Parallax {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.Parallax_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300%;
+  background-image: url('C:\Users\User\project-ipan\src\images\1559254.webp');
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.Parallax_background-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('C:\Users\User\project-ipan\src\images\kisspng-star-clip-art-shooting-star-png-transparent-background-5ab7bf943d69c3.4802820815219915722516.png');
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+  background-color: rgba(37, 37, 37, 0.0);
+}
+
+.Parallax_content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 50px;
+  background-color: rgba(37, 37, 37, 0.0);
+}
+
+/* Background */
+
+.invinsible-background {
+  background-color: rgba(0, 0, 0, 0.1);
+}
