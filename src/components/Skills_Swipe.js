@@ -5,37 +5,39 @@ import 'slick-carousel/slick/slick-theme.css';
 
 export default function Skills_Swipe() {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 5000,
+    arrows: false,
   };
 
   return (
     <div>
-      <Slider {...settings}>
-        <div className="skills-container">
-          <h3>LeetCode</h3>
-          <p>Master on solving LeetCode problems.</p>
-        </div>
-        <div className="skills-container">
-          <h3>Problem Solver</h3>
-          <p>Average time of 25 seconds in solving rubiks cube.</p>
-          <p>the number is true, but this is just a joke, please dont take it seriously</p>
-        </div>
-        <div className="skills-container">
-          <h3>WPM</h3>
-          <p>Reach 120 WPM.</p>
-        </div>
-        <div className="skills-container">
-          <h3>Always learning</h3>
-          <p>Up-to-date with current technology, such as ChatGPT, Blackbox AI.</p>
-        </div>
-        {/* Add more slides as needed */}
-      </Slider>
+      <div className="skills-container">
+        <Slider {...settings}>
+          <div className="align-right">
+            <h2 className="raleway">LeetCode</h2>
+            <p  className="quicksand">Loved to solving LeetCode problems with friends.</p>
+          </div>
+          <div className="align-right">
+          <h2 className="raleway">Problem Solver</h2>
+          <p  className="quicksand">Average time of 25 seconds in solving rubiks cube.</p>
+          <p  className="quicksand">the number is true, but this is just a joke, please dont take it seriously</p>
+          </div>
+          <div className="align-right">
+          <h2 className="raleway">WPM</h2>
+          <p  className="quicksand">Reach 120 WPM.</p>
+          </div>
+          <div className="align-right">
+          <h2 className="raleway">Always learning</h2>
+          <p  className="quicksand">Up-to-date with current technology, such as ChatGPT, Blackbox AI.</p>
+          </div>
+        </Slider>
+      </div>
     </div>
   );
 }

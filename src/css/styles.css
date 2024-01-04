@@ -730,11 +730,39 @@ body.light-mode {
 
 .skills-container {
   background-color: var(--tertiary-color);
-  padding-left: 25px;
-  margin-top: -20px;
-  padding: 10px;
-  margin: 10px;
   height: 230px;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.coding-container {
+  background-color: var(--shadow-color);
+  padding: 50px 250px 80px 40px;
+  margin-left: 80px;
+}
+
+.coding-container-inside {
+  height: 500px;
+  width: 800px;
+}
+
+.bar-chart {
+  color: var(--primary-color);
+  font-size: 30px;
+  width: 100px;
+}
+
+.move-left-animation {
+  animation: moveLeft 10s linear infinite;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 /* Parallax */
