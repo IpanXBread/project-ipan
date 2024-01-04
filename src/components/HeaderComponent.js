@@ -16,7 +16,7 @@ export default function HeaderComponent() {
     };
 
     useEffect(() => {
-        // Set the theme on component mount
+        // Set the theme on component mountaa
         document.body.classList.toggle('light-mode', isLightMode);
     }, [isLightMode]);
 
