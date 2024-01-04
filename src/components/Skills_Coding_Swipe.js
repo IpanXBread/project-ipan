@@ -21,20 +21,27 @@ export default function Skills_Coding_Swipe() {
         <Slider {...settings}>
           <div className="align-right">
             <h2 className="raleway">LeetCode</h2>
-            <p  className="quicksand">Loved to solving LeetCode problems with friends.</p>
+            <p  className="quicksand">Loves to solve LeetCode problems with friends.</p>
           </div>
           <div className="align-right">
           <h2 className="raleway">Problem Solver</h2>
           <p  className="quicksand">Average time of 25 seconds in solving rubiks cube.</p>
-          <p  className="quicksand">the number is true, but this is just a joke, please dont take it seriously</p>
+          <p  className="quicksand text-even-less-color">while the record is true, but this is just a joke, please dont take it seriously</p>
           </div>
           <div className="align-right">
           <h2 className="raleway">WPM</h2>
-          <p  className="quicksand">Reach 120 WPM.</p>
+          <p  className="quicksand">Reach highest of 120 WPM.</p>
+          <p  className="quicksand text-even-less-color">Thats top 0.001%! Crazy!</p>
           </div>
           <div className="align-right">
           <h2 className="raleway">Always learning</h2>
-          <p  className="quicksand">Up-to-date with current technology, such as ChatGPT, Blackbox AI.</p>
+          <p  className="quicksand">Up-to-date with current technology, such as ChatGPT.</p>
+          <p  className="quicksand">Prefer to use all shortcut key existed.</p>
+          </div>
+          <div className="align-right">
+          <h2 className="raleway">Always learning</h2>
+          <p  className="quicksand">Up-to-date with current technology, such as ChatGPT.</p>
+          <p  className="quicksand">Prefer to use all shortcut key existed.</p>
           </div>
         </Slider>
       </div>
