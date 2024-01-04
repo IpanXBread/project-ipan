@@ -23,9 +23,14 @@ export default function SkillsPage() {
       <Skills_Coding_Swipe />
 
       <Skills_Editor />
+
       <Skills_Building />
+
       <Skills_Trading />
 
+      <div className="add-bottom">
+        <p className="raleway normal-text-size center-horizontal">You've reached the end of the list</p>
+      </div>
 
       <FooterComponent style={{ zIndex: 2 }} />
 

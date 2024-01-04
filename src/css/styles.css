@@ -137,6 +137,10 @@ body.light-mode {
   line-height: 2;
 }
 
+.justify-text {
+  text-align: justify;
+}
+
 .primary-color {
   color: var(--primary-color);
 }
@@ -758,13 +762,17 @@ body.light-mode {
 
 .coding-container {
   background-color: var(--shadow-color);
-  padding: 50px 250px 80px 40px;
+  padding: 50px 50px 80px 40px;
   margin-left: 80px;
 }
 
 .coding-container-inside {
   height: 500px;
-  width: 800px;
+  width: 600px;
+}
+
+.half-space-only {
+  width: 500px;
 }
 
 .bar-chart {
@@ -792,12 +800,12 @@ body.light-mode {
 
 /* Skills - Video Editor */
 
-.skills-2nd-background {
+.video-container {
   background-color: #1B3135;
-  width: 100%;
-  height: 1000px;
-  margin-bottom: 20px;
-  margin-top: 15px;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px; 
+  margin-top: -10px;
 }
 
 /* Parallax */
