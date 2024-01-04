@@ -32,18 +32,24 @@ export default function Skills_Coding() {
 
     const options = {
         scales: {
-            y: {
-                beginAtZero: true,
-                max: 10,
+        y: {
+            beginAtZero: true,
+            max: 10,
+            ticks: {
+                fontSize: 16, // Set the font size for the y-axis labels
             },
-            x: {
-                scales: {
-                    x: {
-                        barThickness: 5,
+        },
+        x: {
+            scales: {
+                x: {
+                    barThickness: 5,
+                    ticks: {
+                        fontSize: 16, // Set the font size for the x-axis labels
                     },
                 },
             },
         },
+    },
         plugins: {
             legend: {
                 display: true,
@@ -73,7 +79,7 @@ export default function Skills_Coding() {
     return (
         <div className=''>
             <div className="position-container">
-                <h1 className="quicksand">CODING LANGUAGE</h1>
+                <h1 className="quicksand big-text ">CODING LANGUAGE</h1>
             </div>
             <div className="coding-container quicksand primary-color big-text">
                 <div className="coding-container-inside">

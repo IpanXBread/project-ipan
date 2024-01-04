@@ -706,7 +706,7 @@ body.light-mode {
 }
 
 .position-container {
-  padding-left: 25px;
+  padding-left: 45px;
   margin-top: -20px;
 }
 
@@ -733,6 +733,7 @@ body.light-mode {
   height: 230px;
   width: 60%;
   margin-left: 20%;
+  margin-bottom: 150px;
 }
 
 .coding-container {
@@ -763,6 +764,10 @@ body.light-mode {
   100% {
     transform: translateX(-100%);
   }
+}
+
+.add-bottom {
+  margin-bottom: 100px;
 }
 
 /* Parallax */
