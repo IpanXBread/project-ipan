@@ -32,24 +32,24 @@ export default function Skills_Coding() {
 
     const options = {
         scales: {
-        y: {
-            beginAtZero: true,
-            max: 10,
-            ticks: {
-                fontSize: 16, // Set the font size for the y-axis labels
+            y: {
+                beginAtZero: true,
+                max: 10,
+                ticks: {
+                    fontSize: 16, // Set the font size for the y-axis labels
+                },
             },
-        },
-        x: {
-            scales: {
-                x: {
-                    barThickness: 5,
-                    ticks: {
-                        fontSize: 16, // Set the font size for the x-axis labels
+            x: {
+                scales: {
+                    x: {
+                        barThickness: 5,
+                        ticks: {
+                            fontSize: 16, // Set the font size for the x-axis labels
+                        },
                     },
                 },
             },
         },
-    },
         plugins: {
             legend: {
                 display: true,
@@ -81,7 +81,7 @@ export default function Skills_Coding() {
             <div className="position-container">
                 <h1 className="quicksand big-text ">CODING LANGUAGE</h1>
             </div>
-            <div className="coding-container quicksand primary-color big-text">
+            <div className="coding-container horizontal">
                 <div className="coding-container-inside">
                     <Bar
                         data={data}
@@ -89,6 +89,13 @@ export default function Skills_Coding() {
                         className="bar-chart quicksand primary-color big-text"
                     ></Bar>
                 </div>
+                <div>
+                    <h2 className=" big-text josefin-sans">From Me</h2>
+                    <h4 className="normal-text-size quicksand spacing-text text-alignment-little-left primary-color">
+  All modern programming languages are the same. I believe to be efficient in coding is by understanding <span className="bold-text">HOW</span> it works. Even if the syntax is wrong, ChatGPT and StackOverflow are always there to help. Programmers just need to know <span className="bold-text">WHERE</span> to find the answer, <span className="bold-text">WHAT</span> question should be ask, and <span className="bold-text">WHY</span> the solution works. Hence, by understanding coding.
+</h4>
+                </div>
+
             </div>
         </div>
     );

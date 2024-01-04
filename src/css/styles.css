@@ -130,6 +130,11 @@ body.light-mode {
 
 .normal-text-size {
   font-size: 20px;
+  padding-top: 30px;
+}
+
+.spacing-text {
+  line-height: 2;
 }
 
 .primary-color {
@@ -142,6 +147,12 @@ body.light-mode {
 
 .text-even-less-color {
   color: var(--text-even-less-color);
+}
+
+.bold-text {
+  font-weight: underline;
+  color: var(--text-color);
+  font-size: 30px;
 }
 
 /* Box & Container */
@@ -440,6 +451,10 @@ body.light-mode {
 
 .text-alignment-left {
   padding-left: 22%;
+}
+
+.text-alignment-little-left {
+  padding-left: 30px;
 }
 
 .container-test {
