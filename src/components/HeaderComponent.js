@@ -1,17 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import HeaderContent from "./HeaderContent";
 import '../css/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDev } from '@fortawesome/free-brands-svg-icons';
 
 export default function HeaderComponent() {
-
-    const [isLightMode, setIsLightMode] = useState(false);
+    const storedMode = localStorage.getItem('themeMode');
+    const [isLightMode, setIsLightMode] = useState(storedMode === 'light');
 
     const toggleMode = () => {
+        const newMode = !isLightMode ? 'light' : 'dark';
         setIsLightMode((prevMode) => !prevMode);
-        document.body.classList.toggle('light-mode');
+        document.body.classList.toggle('light-mode', newMode === 'light');
+        localStorage.setItem('themeMode', newMode);
     };
+
+    useEffect(() => {
+        // Set the theme on component mount
+        document.body.classList.toggle('light-mode', isLightMode);
+    }, [isLightMode]);
 
     return (
         <div className="space-between">
