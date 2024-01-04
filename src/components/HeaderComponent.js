@@ -8,7 +8,7 @@ export default function HeaderComponent() {
     const storedMode = localStorage.getItem('themeMode');
     const [isLightMode, setIsLightMode] = useState(storedMode === 'light');
 
-    console.log("Hi world");
+    console.log("Helu world");
 
     const toggleMode = () => {
         const newMode = !isLightMode ? 'light' : 'dark';
