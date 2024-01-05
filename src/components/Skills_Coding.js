@@ -89,7 +89,7 @@ export default function Skills_Coding() {
                         className="bar-chart quicksand primary-color big-text coding-container-inside"
                     ></Bar>
                 </div>
-                <div className="">
+                <div className="coding-container-inside">
                     <h2 className=" big-text josefin-sans">From Me</h2>
                     <h4 className="normal-text-size quicksand spacing-text text-alignment-little-left primary-color justify-text">
   All modern programming languages are the same. I believe to be efficient in coding is by understanding <span className="bold-text">HOW</span> it works. Even if the syntax is wrong, ChatGPT and StackOverflow are always there to help. Programmers just need to know <span className="bold-text">WHERE</span> to find the answer, <span className="bold-text">WHAT</span> question should be ask, and <span className="bold-text">WHY</span> the solution works. Hence, by understanding coding.
