@@ -768,11 +768,12 @@ body.light-mode {
 
 .coding-container-inside {
   height: 500px;
-  width: 600px;
+  width: 675px;
 }
 
 .half-space-only {
-  width: 500px;
+  width: 800px;
+  margin-right: 40px;
 }
 
 .bar-chart {
