@@ -14,7 +14,7 @@ export default function HeaderContent(props) {
 
   return (
     <a href={props.destinationURL} style={style} className="reset">
-      <p className="josefin-sans">{props.headerName}</p>
+      <p className="josefin-sans header-text">{props.headerName}</p>
     </a>
   );
 }

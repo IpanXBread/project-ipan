@@ -1,5 +1,5 @@
 import '../css/styles.css';
-import sijil_matrik_pertandingan_programming from '../images/sijil_matrik_pertandingan_programming.png';
+import sijil_matrik_programming from '../images/sijil_matrik_programming.png';
 import sijil_matrik_pal from '../images/sijil_matrik.png';
 import redhat1 from '../images/redhat1.png';
 import redhat2 from '../images/redhat2.png';
@@ -9,7 +9,7 @@ export default function Home_Certificate() {
     const certificates = [
         {
             title: "'Problem Solving And Programming Challenges' Competition",
-            imageName: sijil_matrik_pertandingan_programming,
+            imageName: sijil_matrik_programming,
         },
         {
             title: 'Program Peer-Assisted Learning (PAL)',

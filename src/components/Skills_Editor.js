@@ -1,10 +1,19 @@
 import '../css/styles.css';
-
+import Slider from 'react-slick';
+import React, { useEffect } from 'react';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 export default function Skills_Editor() {
 
+    const videos = ['1st video', '2nd video', '3rd video', '4th video', '5th video', '6th video'];
+
+    const duplicatedVideos = [...videos, ...videos];
+
     return (
-        <div className='add-bottom'>
+        <div className='add-bottom hidden-overflow-x'>
             <svg
                 preserveAspectRatio="none"
                 viewBox="0 0 1200 120"
@@ -23,10 +32,21 @@ export default function Skills_Editor() {
             </svg>
 
             <div className="video-container">
-            <div className="position-container">
-                <h1 className="quicksand big-text ">VIDEO EDITOR  </h1>
-            </div>
-
+                <div className="position-container">
+                    <h1 className="quicksand big-text ">VIDEO EDITOR  </h1>
+                    <div className="quicksand up-text">Here are some of my edited videos.</div>
+                </div>
+                <div className="video-carousel">
+                    {duplicatedVideos.map((video, index) => (
+                        <div key={index} className="video-box">
+                            {video}
+                        </div>
+                    ))}
+                </div>
+                <div className="quicksand center-horizontal">
+                    More on 
+                    <a className="icon-link" href="https://www.youtube.com/@ipanxbread" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faYoutube} className="icon-exception" /></a>
+                </div>
             </div>
 
             <svg

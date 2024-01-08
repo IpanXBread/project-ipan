@@ -11,7 +11,7 @@ export default function Skills_Coding_Swipe() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3500,
     arrows: false,
   };
 
@@ -29,7 +29,7 @@ export default function Skills_Coding_Swipe() {
           <p  className="quicksand text-even-less-color">while the record is true, but this is just a joke, please dont take it seriously</p>
           </div>
           <div className="align-right">
-          <h2 className="raleway">WPM</h2>
+          <h2 className="raleway">Typing Speed</h2>
           <p  className="quicksand">Reach highest of 120 WPM.</p>
           <p  className="quicksand text-even-less-color">Thats top 0.001%! Crazy!</p>
           </div>

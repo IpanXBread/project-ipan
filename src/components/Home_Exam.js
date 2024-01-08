@@ -13,7 +13,7 @@ export default function Home_Exam() {
     return (
         <div className='education'>
             {/* Title */}
-            <h1 className="font-bold">CERTIFICATE</h1>
+            <h1 className="font-bold">SPECIAL EXAM</h1>
 
             <div className="centered">
                 {exams.map((exam, index) => (
