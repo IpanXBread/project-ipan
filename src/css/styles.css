@@ -1,4 +1,6 @@
 /* Relate to everything maybe */
+
+
 /* Default styles (dark mode) */
 :root {
   --text-color: rgb(219, 232, 243);
@@ -8,6 +10,7 @@
   --background-transparent-color: rgba(26, 26, 26, 0.582);
   --primary-color: #216F79;
   --primary-bright-color: #21c6db;
+  --primary-light-color: #26b6c9;
   --primary-shadow-color: rgba(33, 74, 80, 0.541);
   --secondary-color: rgb(9, 23, 32);
   --tertiary-color: #0b2b31;
@@ -27,6 +30,7 @@ body.light-mode {
   --background-color: rgb(219, 232, 243);
   --background-transparent-color: rgba(219, 232, 243, 0.568);
   --primary-color: #216F79;
+  --primary-light-color: rgb(30, 109, 122);
   --secondary-color: rgb(82, 113, 134);
   --tertiary-color: #248a9c;
   --shadow-color: rgba(255, 255, 255, 0.4);
@@ -131,7 +135,13 @@ body.light-mode {
 
 .normal-text-size {
   font-size: 20px;
-  padding-top: 30px;
+}
+
+.fix-overflow-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 8; /* Set the number of lines to display before showing ellipsis */
+  -webkit-box-orient: vertical;
 }
 
 .spacing-text {
@@ -144,6 +154,10 @@ body.light-mode {
 
 .primary-color {
   color: var(--primary-color);
+}
+
+.primary-light-color {
+  color: var(--primary-light-color);
 }
 
 .text-less-color {
@@ -741,7 +755,10 @@ body.light-mode {
 .align-left {}
 
 .align-right {
-  padding-left: 70px;
+  padding-left: 10%;
+  margin-left: -5%;
+  width: 50%;
+  max-width: 90%;
 }
 
 .position-container {
@@ -769,16 +786,18 @@ body.light-mode {
 
 .skills-container {
   background-color: var(--tertiary-color);
-  height: 230px;
-  width: 60%;
+  height: 210px;
+  width: 69%;
   margin-left: 20%;
   margin-bottom: 150px;
 }
 
 .coding-container {
   background-color: var(--shadow-color);
-  padding: 50px 50px 80px 40px;
+  padding: 50px 75px 80px 40px;
   margin-left: 80px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .coding-container-inside {
@@ -813,6 +832,10 @@ body.light-mode {
 
 .add-bottom {
   margin-bottom: 100px;
+}
+
+.add-top {
+  padding-top: 50px;
 }
 
 /* Skills - Video Editor */
@@ -982,4 +1005,11 @@ body.light-mode {
 
 .invinsible-background {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* MOBILE VIEW */
+@media (max-width: 600px) {
+  .normal-text-size {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
 }

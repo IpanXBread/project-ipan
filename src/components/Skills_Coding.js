@@ -91,9 +91,9 @@ export default function Skills_Coding() {
                 </div>
                 <div className="coding-container-inside">
                     <h2 className=" big-text josefin-sans">From Me</h2>
-                    <h4 className="normal-text-size quicksand spacing-text text-alignment-little-left primary-color justify-text">
-  All modern programming languages are the same. I believe to be efficient in coding is by understanding <span className="bold-text">HOW</span> it works. Even if the syntax is wrong, ChatGPT and StackOverflow are always there to help. Programmers just need to know <span className="bold-text">WHERE</span> to find the answer, <span className="bold-text">WHAT</span> question should be ask, and <span className="bold-text">WHY</span> the solution works. Hence, by understanding coding.
-</h4>
+                    <h4 className="fix-overflow-text normal-text-size quicksand spacing-text text-alignment-little-left primary-light-color justify-text">
+                        To code efficiently, grasp <span className="bold-text">HOW</span> it works. Syntax mistakes? ChatGPT and StackOverflow are your pals. Know <span className="bold-text">WHERE</span> to find answers, <span className="bold-text">WHAT</span> questions to ask, and <span className="bold-text">WHY</span> solutions work. It's all about understanding coding.
+                    </h4>
                 </div>
 
             </div>
