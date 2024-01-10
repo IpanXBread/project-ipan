@@ -22,7 +22,7 @@ export default function ProjectPage() {
       company: 'Universiti Kebangsaan Malaysia',
       position: 'Final Year Project',
       dateRange: 'Sept 2022 ~ March 2023', // not sure
-      image: 'UKM3',
+      image: 'solat-time-logo',
       language: 'JavaScript',
       description: 'Individual projects that involves taking data from API in real time and store the data using Realtime Firebase.',
       align: 'right',

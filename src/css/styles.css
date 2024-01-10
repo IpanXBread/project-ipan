@@ -566,6 +566,14 @@ body.light-mode {
   background-repeat: no-repeat;
 }
 
+
+.solat-time-logo {
+  background-image: url('../images/solat-time-logo-v2.png');
+  padding: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .minecraft {
   background-image: url('../images/minecraft.png');
   padding: 80px;
