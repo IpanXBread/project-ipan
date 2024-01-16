@@ -25,9 +25,9 @@ export default function Home_Education() {
                 {/* SMKDABB */}
                 <div className="gray-box-education">
                     <div className="smkdabb"></div>
-                    <h2 className="centered" style={{ textAlign: 'center' }}>SMK Dato' Abu Bakar Baginda</h2>
+                    <h3 className="centered" style={{ textAlign: 'center' }}>SMK Dato' Abu Bakar Baginda</h3>
                     <div className="centered light-gray-box">
-                        <h3>2014 ~ 2018</h3>
+                        <h4>2014 ~ 2018</h4>
                     </div>
 
                     <div className="make-it-bottom">
@@ -43,9 +43,9 @@ export default function Home_Education() {
                 {/* KMS */}
                 <div className="gray-box-education">
                     <div className="kms"></div>
-                    <h2 className="centered" style={{ textAlign: 'center' }}>Kolej Matrikulasi Selangor</h2>
+                    <h3 className="centered" style={{ textAlign: 'center' }}>Kolej Matrikulasi Selangor</h3>
                     <div className="centered light-gray-box">
-                        <h3>2019 ~ 2020</h3>
+                        <h4>2019 ~ 2020</h4>
                     </div>
 
                     <div className="make-it-bottom">
@@ -62,9 +62,9 @@ export default function Home_Education() {
                 {/* UKM */}
                 <div className="gray-box-education">
                     <div className="UKM2"></div>
-                    <h2 className="centered" style={{ textAlign: 'center' }}>Universiti Kebangsaan Malaysia</h2>
+                    <h3 className="centered" style={{ textAlign: 'center' }}>Universiti Kebangsaan Malaysia</h3>
                     <div className="centered light-gray-box">
-                        <h3>2020 ~ 2024</h3>
+                        <h4>2020 ~ 2024</h4>
                     </div>
                     <div className="make-it-bottom">
                         <h4 style={{ fontWeight: 'lighter', marginBottom: '-15px' }}>Bachelor's Degree in Computer Science</h4>

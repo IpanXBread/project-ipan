@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../css/styles.css';
+import Tilt from "react-parallax-tilt";
 
 const Modal = ({ title, dateRange, image, description, closeModal }) => {
     return (
@@ -54,13 +55,15 @@ export default function Work_Component(props) {
             </div>
 
             {isModalOpen && (
-                <Modal
-                    title={title}
-                    dateRange={dateRange}
-                    description={description}
-                    closeModal={closeModal}
-                    image={image}
-                />
+                <Tilt style={{ marginTop: "-20px", paddingTop: "-20px", width: "500px", zIndex:"100000000" }}>
+                    <Modal
+                        title={title}
+                        dateRange={dateRange}
+                        description={description}
+                        closeModal={closeModal}
+                        image={image}
+                    />
+                </Tilt>
             )}
         </>
     );

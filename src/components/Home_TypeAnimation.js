@@ -7,11 +7,11 @@ export default function Home_TypeAnimation() {
       sequence={[
         'an experienced front end developer.',
         2000,
-        'also interested in back end developer.',
+        'also interested in developing back end.',
         2000,
-        'advance in using React Native.',
+        'still a fresh grad, looking for job opportunity.',
         2000,
-        'currently learning Typescript using React.',
+        'currently learning how to code better.',
         2000
       ]}
       wrapper="span"

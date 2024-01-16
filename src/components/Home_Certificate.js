@@ -1,6 +1,6 @@
 import '../css/styles.css';
 import sijil_matrik_programming from '../images/sijil_matrik_programming.png';
-import sijil_matrik_pal from '../images/sijil_matrik.png';
+import sijil_matrik_pal from '../images/sijil_matrik_pal.png';
 import redhat1 from '../images/redhat1.png';
 import redhat2 from '../images/redhat2.png';
 

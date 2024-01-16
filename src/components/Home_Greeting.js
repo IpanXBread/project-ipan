@@ -1,11 +1,17 @@
 import '../css/styles.css';
 import Home_TypeAnimation from './Home_TypeAnimation';
+import resumeIpan from '../images/resume_ipan_2024.png';
 
 export default function Home_Greeting() {
 
     const downloadResume = () => {
-        console.log("download resume");
-    }
+        const link = document.createElement('a');
+        link.href = resumeIpan;
+        link.download = 'resume_ipan_2024.png';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
 
     return (
         <div className='container'>

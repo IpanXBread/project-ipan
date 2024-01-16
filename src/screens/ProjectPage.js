@@ -1,6 +1,7 @@
 import HeaderComponent from '../components/HeaderComponent';
 import FooterComponent from '../components/FooterComponent';
 import Project_Component from '../components/Project_Component';
+import Parallax_Mousemove from '../components/Parallax_Mousemove';
 import React, { useState } from 'react';
 import '../css/styles.css';
 
@@ -58,6 +59,8 @@ export default function ProjectPage() {
         </div>
         <p className="rajdhani big-text-up">INDIVIDUAL BIG PROJECTS</p>
       </div>
+
+      {/* <Parallax_Mousemove/> */}
 
       <div className="circle"></div>
       <div className="vertical-line"></div>

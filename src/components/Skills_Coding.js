@@ -90,10 +90,10 @@ export default function Skills_Coding() {
                     ></Bar>
                 </div>
                 <div className="coding-container-inside">
-                    <h2 className=" big-text josefin-sans">From Me</h2>
-                    <h4 className="fix-overflow-text normal-text-size quicksand spacing-text text-alignment-little-left primary-light-color justify-text">
+                    <h2 className=" josefin-sans">From Me</h2>
+                    <h3 className="fix-overflow-text quicksand spacing-text text-alignment-little-left primary-light-color justify-text">
                         To code efficiently, grasp <span className="bold-text">HOW</span> it works. Syntax mistakes? ChatGPT and StackOverflow are your pals. Know <span className="bold-text">WHERE</span> to find answers, <span className="bold-text">WHAT</span> questions to ask, and <span className="bold-text">WHY</span> solutions work. It's all about understanding coding.
-                    </h4>
+                    </h3>
                 </div>
 
             </div>
