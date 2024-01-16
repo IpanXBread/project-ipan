@@ -50,12 +50,14 @@ export default function Work_Component(props) {
 
     return (
         <>
-            <div className="quicksand work-title one-line" onClick={openModal}>
-                <h2>{title}</h2>
-            </div>
+            {!isModalOpen && (
+                <div className="quicksand work-title one-line" onClick={openModal}>
+                    <h2>{title}</h2>
+                </div>
+            )}
 
             {isModalOpen && (
-                <Tilt style={{ marginTop: "-20px", paddingTop: "-20px", width: "500px", zIndex:"100000000" }}>
+                <Tilt style={{ marginTop: "50px", paddingTop: "-20px", width: "700px", zIndex: "100000000" }}>
                     <Modal
                         title={title}
                         dateRange={dateRange}

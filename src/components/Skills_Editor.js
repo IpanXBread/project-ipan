@@ -11,7 +11,15 @@ export default function Skills_Editor() {
 
     const [isHovered, setIsHovered] = useState(false);
 
-    const videos = ['1st video', '2nd video', '3rd video', '4th video', '5th video', '6th video'];
+    const videos = [
+        'https://www.youtube.com/watch?v=video1',
+        'https://www.youtube.com/watch?v=video2',
+        'https://www.youtube.com/watch?v=video3',
+        'https://www.youtube.com/watch?v=video4',
+        'https://www.youtube.com/watch?v=video5',
+        'https://www.youtube.com/watch?v=video6',
+    ];
+
     const duplicatedVideos = [...videos, ...videos];
 
     const handleHover = () => {
@@ -24,8 +32,16 @@ export default function Skills_Editor() {
         setIsHovered(false);
     };
 
+    const settings = {
+        slidesToShow: 3, // Adjust the number of slides shown
+        infinite: true,
+        speed: 500,
+        arrows: false,
+    };
+
     return (
         <div className='add-bottom hidden-overflow-x'>
+
             <svg
                 preserveAspectRatio="none"
                 viewBox="0 0 1200 120"
@@ -44,16 +60,17 @@ export default function Skills_Editor() {
             </svg>
 
             <div className="video-container">
+
                 <div className="position-container">
                     <h1 className="quicksand big-text ">VIDEO EDITOR  </h1>
-                    <div className="quicksand up-text">(please dont zoom out or you can see the flaw)</div>
+                    <div className="quicksand up-text" style={{ color: "gray" }}>(please dont zoom out or you can see the flaw)</div>
                 </div>
 
                 <div className={`video-carousel ${isHovered ? 'paused' : ''}`} onMouseEnter={handleHover} onMouseLeave={handleLeave}>
                     {duplicatedVideos.map((video, index) => (
-                        <div key={index} className="video-box">
+                        <a key={index} href={video} target="_blank" rel="noopener noreferrer" className="video-box">
                             {video}
-                        </div>
+                        </a>
                     ))}
                 </div>
 

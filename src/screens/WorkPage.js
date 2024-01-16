@@ -2,16 +2,108 @@ import React, { useEffect, useState } from 'react';
 import HeaderComponent from '../components/HeaderComponent';
 import FooterComponent from '../components/FooterComponent';
 import Work_Component from '../components/Work_Component';
+import Work_Particles from '../components/Work_Particles';
+
+import { DrawerContext } from "../App";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim";
+
 import '../css/styles.css';
 
 export default function WorkPage() {
+
+  const [init, setInit] = React.useState(false);
+
+  React.useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      await loadSlim(engine);
+    }).then(() => {
+      setInit(true);
+    });
+  }, []);
+
+  const particlesLoaded = (container) => {
+    console.log(container);
+  };
+
+  const options = React.useMemo(
+    () => ({
+      background: {
+        color: {
+          value: "var(--background-color)",
+        },
+      },
+      fullScreen: { enable: true },
+      fpsLimit: 120,
+      interactivity: {
+        events: {
+          onClick: {
+            enable: false,
+            mode: "push",
+          },
+          onHover: {
+            enable: true,
+            mode: "repulse",
+          },
+        },
+        modes: {
+          push: {
+            quantity: 4,
+          },
+          repulse: {
+            distance: 200,
+            duration: 0.4,
+          },
+        },
+      },
+      particles: {
+        color: {
+          value: "#000000",
+        },
+        links: {
+          color: "#ffffff",
+          distance: 200,
+          enable: true,
+          opacity: 0.9,
+          width: 4,
+        },
+        move: {
+          direction: "none",
+          enable: true,
+          outModes: {
+            default: "bounce",
+          },
+          random: false,
+          speed: 6,
+          straight: false,
+        },
+        number: {
+          density: {
+            enable: true,
+          },
+          value: 70,
+        },
+        opacity: {
+          value: 0.5,
+        },
+        shape: {
+          type: "circle",
+        },
+        size: {
+          value: { min: 1, max: 5 },
+        },
+      },
+      detectRetina: false,
+    }),
+    []
+  );
 
   const work = {
     finexus: {
       title: 'Finexus International Sdn Bhd',
       dateRange: 'Sept 2023 ~ Feb 2024',
       image: 'finexus',
-      description: 'Finexus, a big company that offers most bank for its software development. Some of the work are within Finexus own application that involves banking system such as KayaAku which the project that I help during my internship.' ,
+      description: 'Finexus, a big company that offers most bank for its software development. Some of the work are within Finexus own application that involves banking system such as KayaAku which the project that I help during my internship.',
     },
     petronas: {
       title: 'Petronas (testing)',
@@ -23,42 +115,53 @@ export default function WorkPage() {
 
   return (
     <div>
-
       <header><HeaderComponent /></header>
 
-      {/* Title */}
-      <div className="work-container ">
-        <div className="super-big-text tilt-prism"><h1>WORK</h1></div>
-        <p className="big-text-up gray-hidden-text">(The workplace is clickable)</p>
-      </div>
+      <body style={{ margin: '0' }}>
 
-      <div className="vertical-long-line"></div>
+        <Particles
+          id="particles"
+          options={options}
+          init={init}
+          loaded={particlesLoaded}
+          className='particle-container'
+        >
+        </Particles>
 
-      <div>
-        {/* 2023 */}
-        <div className="front-box rajdhani super-big-text ">
-          <p className="">2023</p>
+        {/* Title */}
+        <div className="work-container ">
+          <div className="super-big-text tilt-prism"><h1>WORK</h1></div>
+          <p className="big-text-up gray-hidden-text">(The workplace is clickable)</p>
         </div>
 
-        <div className="front-box">
-          <Work_Component {...work.finexus} />
-        </div>
+        <div className="vertical-long-line"></div>
 
-        {/* 2024 */}
-        <div className="front-box rajdhani super-big-text ">
-          <p>2024</p>
-        </div>
+        <div>
+          {/* 2023 */}
+          <div className="front-box rajdhani super-big-text ">
+            <p className="">2023</p>
+          </div>
 
-        {/* 2025 */}
-        <div className="front-box rajdhani super-big-text ">
-          <p>2025</p>
-        </div>
+          <div className="front-box">
+            <Work_Component {...work.finexus} />
+          </div>
 
-        <div className="front-box">
-          <Work_Component {...work.petronas} />
-        </div>
+          {/* 2024 */}
+          <div className="front-box rajdhani super-big-text ">
+            <p>2024</p>
+          </div>
 
-      </div>
+          {/* 2025 */}
+          <div className="front-box rajdhani super-big-text ">
+            <p>2025</p>
+          </div>
+
+          <div className="front-box">
+            <Work_Component {...work.petronas} />
+          </div>
+
+        </div>
+      </body>
 
       <FooterComponent style={{ zIndex: 2 }} />
 

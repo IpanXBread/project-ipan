@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from '../src/components/ThemeContext';
+import React, { createContext } from "react";
 
 import HomePage from './screens/HomePage';
 import WorkPage from './screens/WorkPage';
@@ -9,10 +10,12 @@ import ParallaxPage from "./screens/ParallaxPage";
 import ProjectPage from "./screens/ProjectPage";
 import SkillsPage from "./screens/SkillsPage";
 
+export const DrawerContext = createContext("");
+
 export default function App() {
   return (
     <ThemeProvider> {/* Wrap your entire App with the ThemeProvider */}
-      <div>
+      <div> 
         <BrowserRouter>
           <Routes>
             <Route index element={<HomePage />} />

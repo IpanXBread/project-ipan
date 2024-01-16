@@ -53,7 +53,7 @@ export default function ProjectPage() {
 
       {/* Title */}
 
-      <div className="work-container">
+      <div className="project-container">
         <div className="super-big-text tilt-prism">
           <h1>PROJECT</h1>
         </div>
