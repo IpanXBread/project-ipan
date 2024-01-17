@@ -103,7 +103,7 @@ export default function WorkPage() {
       title: 'Finexus International Sdn Bhd',
       dateRange: 'Sept 2023 ~ Feb 2024',
       image: 'finexus',
-      description: 'Finexus, a big company that offers most bank for its software development. Some of the work are within Finexus own application that involves banking system such as KayaAku which the project that I help during my internship.',
+      description: 'Finexus, a big company that offers most bank for its software development. Some of the work are within Finexus own application that involves banking system such as Ka***ku which the project that I help during my internship.',
     },
     petronas: {
       title: 'Petronas (testing)',

@@ -894,7 +894,10 @@ body.light-mode {
 
 .video-box {
   background-color: var(--background-color);
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
   margin: 20px;
   height: 200px;
   width: 200px;
@@ -906,7 +909,7 @@ body.light-mode {
   opacity: 1;
   height: 250px;
   width: 250px;
-  padding: 20px 20px 20px 20px;
+  padding: 5px;
   margin: -2px 20px 20px 20px;
 }
 
@@ -926,6 +929,18 @@ body.light-mode {
 
 .hidden-overflow-x {
   overflow-x: hidden;
+}
+
+.carousel-each-video {
+  display: flex;
+  justify-content: center;
+  width: 175px;
+  height: 175px;
+}
+
+.carousel-each-video:hover {
+  width: 200px;
+  height: 200px;
 }
 
 /* Skills - Infinite Carousel */
@@ -1210,12 +1225,12 @@ body.light-mode {
 
 .transition-color2 {
   z-index: 20;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 .transition-color3 {
   z-index: 10;
-  background-color: var(--primary-bright-color);
+  background-color: var(--tertiary-color);
 }
 
 

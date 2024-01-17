@@ -6,18 +6,27 @@ import 'slick-carousel/slick/slick-theme.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import Skills_Infinite_Carousel from './Skills_Infinite_Carousel';
+import boat from '../images/boat.jpg';
+import plotspawn from '../images/plot spawn.webp';
+import king from '../images/king.jpg';
+import rareclass from '../images/rare class.jpg';
+import klcc from '../images/klcc.jpg';
+import blender from '../images/blender.jpg';
+
+import sijil_spm from '../images/sijil_spm.png';
+import sijil_matrik from '../images/sijil_matrik.png';
 
 export default function Skills_Editor() {
 
     const [isHovered, setIsHovered] = useState(false);
 
     const videos = [
-        'https://www.youtube.com/watch?v=video1',
-        'https://www.youtube.com/watch?v=video2',
-        'https://www.youtube.com/watch?v=video3',
-        'https://www.youtube.com/watch?v=video4',
-        'https://www.youtube.com/watch?v=video5',
-        'https://www.youtube.com/watch?v=video6',
+        { link: "https://www.youtube.com/shorts/CvhKkS67Wrs", imageSrc: king },
+        { link: "https://www.youtube.com/shorts/kab0H94xPIA", imageSrc: klcc },
+        { link: "https://www.youtube.com/shorts/TyfJhhPpJCc", imageSrc: rareclass },
+        { link: "https://www.youtube.com/watch?v=dyCMN4PIjDk", imageSrc: blender },
+        { link: "https://www.youtube.com/watch?v=I2-H3cnBLaI", imageSrc: boat },
+        { link: "https://www.youtube.com/watch?v=vXdr5zt9CiA", imageSrc: plotspawn }
     ];
 
     const duplicatedVideos = [...videos, ...videos];
@@ -30,6 +39,10 @@ export default function Skills_Editor() {
     const handleLeave = () => {
         console.log("not hovered");
         setIsHovered(false);
+    };
+
+    const handleClick = (videoLink) => {
+        window.open(videoLink, '_blank');
     };
 
     const settings = {
@@ -68,9 +81,12 @@ export default function Skills_Editor() {
 
                 <div className={`video-carousel ${isHovered ? 'paused' : ''}`} onMouseEnter={handleHover} onMouseLeave={handleLeave}>
                     {duplicatedVideos.map((video, index) => (
-                        <a key={index} href={video} target="_blank" rel="noopener noreferrer" className="video-box">
-                            {video}
-                        </a>
+                        <div className="row centered">
+                            <div key={index} className="video-box" onClick={() => handleClick(video.link)}>
+                                <img src={video.imageSrc} className="centered carousel-each-video" alt="no imagou yet" />
+                            </div>
+                            <p>hel</p>
+                        </div>
                     ))}
                 </div>
 

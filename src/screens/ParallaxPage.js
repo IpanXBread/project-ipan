@@ -58,7 +58,7 @@ export default function ParallaxPage() {
       [
         "description project 3",
         "yang ni is related to work, finexus",
-        "helping frontEnd kayaAku punya apps"
+        "helping frontEnd kaku punya apps"
       ]
     ]
 

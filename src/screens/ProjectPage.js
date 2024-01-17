@@ -8,8 +8,8 @@ import '../css/styles.css';
 export default function ProjectPage() {
 
   const projects = {
-    kayaAku: {
-      title: 'KayaAku',
+    kaku: {
+      title: 'Ka***ku',
       company: 'Finexus International Sdn Bhd',
       position: 'Internship',
       dateRange: 'Sept 2023 ~ Feb 2024',
@@ -57,7 +57,7 @@ export default function ProjectPage() {
         <div className="super-big-text tilt-prism">
           <h1>PROJECT</h1>
         </div>
-        <p className="rajdhani big-text-up">INDIVIDUAL BIG PROJECTS</p>
+        <p className="rajdhani big-text-up">LONG-TERM PROJECTS</p>
       </div>
 
       {/* <Parallax_Mousemove/> */}
@@ -65,7 +65,7 @@ export default function ProjectPage() {
       <div className="circle"></div>
       <div className="vertical-line"></div>
 
-      <Project_Component {...projects.kayaAku} />
+      <Project_Component {...projects.kaku} />
       <Project_Component {...projects.solatTime} />
       <Project_Component {...projects.minecraft} />
 

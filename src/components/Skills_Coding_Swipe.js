@@ -35,12 +35,11 @@ export default function Skills_Coding_Swipe() {
           </div>
           <div className="align-right">
           <h2 className="raleway">Always learning</h2>
-          <p  className="quicksand">Up-to-date with current technology, such as ChatGPT.</p>
-          <p  className="quicksand">Prefer to use all shortcut key existed.</p>
+          <p  className="quicksand">Currently learning roadmap.sh for Full Stack Developer.</p>
+          <p  className="quicksand" style={{color:"gray"}}>Up-to-date with current technology, such as ChatGPT.</p>
           </div>
           <div className="align-right">
-          <h2 className="raleway">Always learning</h2>
-          <p  className="quicksand">Up-to-date with current technology, such as ChatGPT.</p>
+          <h2 className="raleway">Faster than Average</h2>
           <p  className="quicksand">Prefer to use all shortcut key existed.</p>
           </div>
         </Slider>
