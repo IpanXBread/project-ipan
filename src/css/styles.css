@@ -14,6 +14,7 @@
   --primary-shadow-color: rgba(33, 74, 80, 0.541);
   --secondary-color: rgb(9, 23, 32);
   --tertiary-color: #0b2b31;
+  --quaternary-color: #1B3135;
   --shadow-color: rgba(0, 0, 0, 0.4);
   --high-shadow-color: rgba(0, 0, 0, 0.7);
   --full-shadow-color: rgb(0, 0, 0);
@@ -34,8 +35,10 @@ body.light-mode {
   --primary-light-color: rgb(30, 109, 122);
   --secondary-color: rgb(82, 113, 134);
   --tertiary-color: #248a9c;
+  --quaternary-color: #8bc4ce;
   --shadow-color: rgba(255, 255, 255, 0.4);
   --high-shadow-color: rgba(255, 255, 255, 0.7);
+  --full-shadow-color: rgb(240, 240, 240);
 }
 
 
@@ -323,6 +326,26 @@ body.light-mode {
   align-items: center;
   justify-content: center;
   min-height: 600px;
+}
+
+.project-button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 10px 58px;
+  border-radius: 51px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: background-color 0.4s;
+  font-size: 20px;
+  width:fit-content;
+}
+
+.project-button:hover {
+  background: linear-gradient(to bottom, #176370, #4cf3e5);
+}
+
+.project-button p {
+  margin: 0;
 }
 
 /* General */
@@ -867,7 +890,7 @@ body.light-mode {
 /* Skills - Video Editor */
 
 .video-container {
-  background-color: #1B3135;
+  background-color: var(--quaternary-color);
   height: auto;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -999,7 +1022,7 @@ body.light-mode {
 }
 
 
-/* Skills - Build Container */
+/* Skills - Build */
 
 .build-container {
   background-color: var(--tertiary-color);
@@ -1012,6 +1035,7 @@ body.light-mode {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 .build-title-container {
@@ -1032,19 +1056,16 @@ body.light-mode {
   border: var(--tertiary-color) 15px solid;
 }
 
-.left-side-empty {
-  background-color: var(--background-color);
-  width: 35%;
-  height: 70px;
-  margin-left: -10px;
-  margin-top: 250px;
+.transition{
+  transition: opacity 0.5s ease-in-out;
 }
 
 .build-container-inside {
   background-color: var(--background-color);
-  height: 550px;
+  height: auto;
   width: 70%;
-  margin-top: 50px;
+  padding: 10px 0px 10px 0px;
+  margin-top: 10px;
   margin-bottom: 50px;
   border-radius: 20px;
   justify-content: center;
@@ -1053,21 +1074,48 @@ body.light-mode {
 }
 
 .build-pictures {
-  background-color: var(--shadow-color);
-  padding: 20px;
-  margin: 10px;
-  height: 80%;
-  width: 85%;
-  border-radius: 30px;
+  width: 88%;
+}
+
+.left-side-empty {
+  background-color: var(--background-color);
+  width: 35%;
+  height: 55px;
+  margin-left: -10px;
+  margin-top: -40px;
 }
 
 .right-side-empty {
   background-color: var(--background-color);
   width: 35%;
   max-width: 4000px;
-  height: 70px;
+  height: 55px;
   margin-right: -10px;
-  margin-top: 250px;
+  margin-top: -40px;
+}
+
+.picture-size {
+  width: 95%;
+}
+
+/* Skills - Trading */
+
+.trading-container {
+  background-color: var(--shadow-color);
+  padding: 5px 5px 5px 5px;
+  display: flex;
+  /* justify-content: space-evenly; */
+}
+
+.same-size {
+  height: auto;
+  width: calc(95% - 20px);
+  padding: 20px;
+  z-index: 5;
+}
+
+.cuba-cuba{
+  width: 95%;
 }
 
 /* Particles */

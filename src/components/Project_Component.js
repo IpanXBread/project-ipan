@@ -28,6 +28,9 @@ export default function Project_Component(props) {
                 <p>Description: </p>
                 <p style={{ marginLeft: '10px' }}>{description}</p>
             </div>
+            <div className="project-button">
+                Explore More
+            </div>
         </div>
         </>
     );

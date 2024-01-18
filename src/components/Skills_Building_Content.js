@@ -3,8 +3,13 @@ import '../css/styles.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import oriental from '../images/oriental.jpeg';
+import fantasy from '../images/fantasy.jpeg';
 
 export default function Skills_Building_Content(props) {
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [isTransitioning, setIsTransitioning] = useState(false);
 
     const settings = {
         dots: false,
@@ -12,33 +17,42 @@ export default function Skills_Building_Content(props) {
         speed: 1500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 3500,
-        arrows: false,
-      };
+        arrows: true,
+        beforeChange: (oldIndex, newIndex) => {
+            setIsTransitioning(true);
+        },
+        afterChange: (index) => {
+            setCurrentIndex(index);
+            setIsTransitioning(false);
+        },
+    };
+
+    const titleStyle = {
+        opacity: isTransitioning ? 0 : 1,
+        transition: isTransitioning ? 'opacity 0.4s ease-in-out' : 'opacity 0.3s ease-in-out',
+    };
 
     return (
         <>
             <div className="build-container">
                 <div className="build-title-container">
-                    <p>{props.title}</p>
+                    <p className="transition" style={titleStyle}>{props.title[currentIndex]}</p>
                 </div>
                 <div className="build-container-middle">
                     <div className="left-side-empty"></div>
                     <div className="build-container-inside">
+
                         <div className="build-pictures">
                             <Slider {...settings}>
-                                <div>
-                                    <p>pic 1</p>
-                                </div>
-                                <div>
-                                    <p>pict 2</p>
-                                </div>
-                                <div>
-                                    <p>pictu 3</p>
-                                </div>
-                                </Slider>
+                                <img src={oriental} className="picture-size" />
+                                <img src={fantasy} className="picture-size" />
+                                <img src={oriental} className="picture-size" />
+                                <img src={fantasy} className="picture-size" />
+                            </Slider>
                         </div>
+
                     </div>
                     <div className="right-side-empty"></div>
                 </div>

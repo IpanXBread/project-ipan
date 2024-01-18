@@ -17,6 +17,7 @@ export default function ProjectPage() {
       language: 'TypeScript',
       description: 'Working on frontend development for both web view and mobile view.',
       align: 'left',
+      link: 'https://project-ipan.vercel.app/error404',
     },
     solatTime: {
       title: 'Solat Time',
@@ -27,6 +28,7 @@ export default function ProjectPage() {
       language: 'JavaScript',
       description: 'Individual projects that involves taking data from API in real time and store the data using Realtime Firebase.',
       align: 'right',
+      link: 'https://project-ipan.vercel.app/error404',
     },
     minecraft: {
       title: 'Minecraft Server',
@@ -37,6 +39,7 @@ export default function ProjectPage() {
       language: 'Java',
       description: 'Configure my own laptop into Ubuntu Linux, set connections from LAN to WAN, set static IP (DHCP reservation), enable port forwarding, using custom DDNS, enable outside players from anywhere to have access to my server.',
       align: 'left',
+      link: 'https://project-ipan.vercel.app/error404',
     },
   };
 

@@ -18,13 +18,13 @@ ChartJS.register(
 export default function Skills_Coding() {
 
     const data = {
-        labels: ['JavaScript', 'TypeScript', 'Java', 'Phyton', 'HTML', 'CSS', 'Tailwind', 'Bootstrap'],
+        labels: ['JavaScript', 'TypeScript', 'Java', 'Phyton', 'React', 'React Native', 'CSS', 'Tailwind', 'Bootstrap'],
         datasets: [
             {
                 label: 'Proficiency',
-                data: [8, 8, 5, 4, 8, 10, 1, 1],
+                data: [8, 8, 5, 4, 8, 9, 9, 10, 1, 1],
                 backgroundColor: '#216F79',
-                borderColor: 'rgba(0, 0, 0, 0.4)',
+                borderColor: 'rgba(0, 0, 0, 0.7)',
                 borderWidth: 2,
             }
         ]
