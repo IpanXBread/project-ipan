@@ -2,8 +2,10 @@ import { FaTimes } from 'react-icons/fa';
 import sijil_spm from '../images/sijil_spm.png';
 import sijil_matrik from '../images/sijil_matrik.png';
 // import sijil_uni from '../images/sijil_uni.png';
+import '../css/styles.css';
+import '../css/Modal.css';
 
-const Modal = ({ level, closeModal }) => {
+const Home_Modal = ({ level, closeModal }) => {
     console.log("level: ", level);
 
     let imageSrc;
@@ -15,7 +17,6 @@ const Modal = ({ level, closeModal }) => {
     // } else if (level === "sijil_uni") {
     //     imageSrc = sijil_uni;
     } else {
-        // Default image or handle other cases
         imageSrc = '';
     }
 
@@ -26,11 +27,11 @@ const Modal = ({ level, closeModal }) => {
                     <FaTimes className="close-button" onClick={closeModal} />
                 </div>
                 <div className="centered">
-                    <img src={imageSrc} className="gray-box-image centered" alt="no imago yet" />
+                    <img src={imageSrc} className="gray-box-modal centered" alt="no imangoes yet" />
                 </div>
             </div>
         </div>
     );
 };
 
-export default Modal;
+export default Home_Modal;

@@ -1,0 +1,5 @@
+.particle-container {
+    height:inherit;
+    width: 100%;
+    position: absolute;
+  }

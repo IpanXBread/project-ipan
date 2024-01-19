@@ -1,6 +1,7 @@
-import '../css/styles.css';
 import Home_TypeAnimation from './Home_TypeAnimation';
 import resumeIpan from '../images/resume_ipan_2024.png';
+import '../css/styles.css';
+import '../css/Home.css';
 
 export default function Home_Greeting() {
 

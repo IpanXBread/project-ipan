@@ -4,6 +4,7 @@ import Project_Component from '../components/Project_Component';
 import Parallax_Mousemove from '../components/Parallax_Mousemove';
 import React, { useState } from 'react';
 import '../css/styles.css';
+import '../css/Project.css';
 
 export default function ProjectPage() {
 

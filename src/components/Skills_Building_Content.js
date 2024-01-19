@@ -38,7 +38,7 @@ export default function Skills_Building_Content(props) {
         <>
             <div className="build-container">
                 <div className="build-title-container">
-                    <p className="transition" style={titleStyle}>{props.title[currentIndex]}</p>
+                    <p style={titleStyle}>{props.title[currentIndex]}</p>
                 </div>
                 <div className="build-container-middle">
                     <div className="left-side-empty"></div>

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import '../css/Parallax.css';
 
 export default function Parallax_Mousemove() {
   useEffect(() => {

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import '../css/styles.css';
+import '../css/Header.css';
 
 export default function HeaderContent(props) {
   const location = useLocation();
@@ -13,7 +14,7 @@ export default function HeaderContent(props) {
   };
 
   return (
-    <a href={props.destinationURL} style={style} className="reset">
+    <a href={props.destinationURL} style={style} className="text-reset">
       <p className="josefin-sans header-text">{props.headerName}</p>
     </a>
   );

@@ -1,0 +1,113 @@
+/* HomePage.js */
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-bottom: -90px;
+  }
+
+  /* Home_Greeting.js */
+
+  
+.download-cv {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-weight: bold;
+    padding: 0px 30px 0px 30px;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    width: fit-content;
+  }
+  
+  .download-cv:hover {
+    background: linear-gradient(to bottom, #176370, #4cf3e5);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Home_Education.js */
+
+  .home-content-container {
+    height: auto;
+    margin-bottom: 100px;
+    width: auto;
+    background-color: var(--primary-shadow-color);
+    padding: 20px 30px 20px 50px;
+    box-shadow: 0px -15px 10px var(--shadow-color);
+  }
+
+  .gray-box-education {
+    background-color: var(--shadow-color);
+    padding: 20px 50px 0px 50px;
+    margin: 20px;
+    border-radius: 10px;
+    height: auto;
+  }
+
+  
+.light-gray-box {
+    background-color: var(--shadow-color);
+    margin: 0 -50px 0 -50px !important;
+  }
+  
+  .education-button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 10px 58px;
+    border-radius: 51px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: background-color 0.4s;
+    font-size: 20px;
+  }
+  
+  .education-button:hover {
+    background: linear-gradient(to bottom, #176370, #4cf3e5);
+  }
+  
+  .education-button p {
+    margin: 0;
+  }
+
+.smkdabb {
+    background-image: url('../images/smkdabb.png');
+    padding: 90px;
+    margin-top: 0px !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .kms {
+    background-image: url('../images/kms.png');
+    padding: 100px;
+    margin-bottom: -20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .UKM2 {
+    background-image: url('../images/UKM_white.png');
+    padding: 150px;
+    margin-bottom: -120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  /* Home_Certificate.js & Home_Exam.js */
+
+  .gray-box-certificate, .gray-box-exam {
+    background-color: var(--shadow-color);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    min-width: 70%;
+    height: auto;
+  }

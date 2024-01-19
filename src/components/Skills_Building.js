@@ -1,4 +1,5 @@
 import '../css/styles.css';
+import '../css/Skills.css';
 import Skills_Building_Content from './Skills_Building_Content';
 
 export default function Skills_Building() {

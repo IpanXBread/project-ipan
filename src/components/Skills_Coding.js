@@ -7,6 +7,7 @@ import {
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 import '../css/styles.css';
+import '../css/Skills.css';
 
 ChartJS.register(
     BarElement,

@@ -1,0 +1,135 @@
+/* ProjectPage.js */
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 650px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-top: -70px;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+.vertical-line {
+    width: 2px;
+    background-color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 682px;
+    bottom: -1700px;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  /* Project_Component.js */
+
+.left-container {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+}
+
+.left-square {
+    background-color: var(--secondary-color);
+    height: auto;
+    width: calc(35% - 20px);
+    padding: 20px;
+    z-index: 5;
+}
+
+.middle-left-square {
+    background-color: var(--tertiary-color);
+    height: auto;
+    width: calc(20% - 25px);
+    padding-right: 2rem;
+    margin-left: -50px;
+    margin-top: 50px;
+    margin-bottom: auto;
+    padding-left: 4rem;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    z-index: 4;
+}
+
+.square-big-text {
+    font-size: 30px;
+    margin-bottom: -15px;
+    margin-top: 10px;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    padding-bottom: 50px;
+}
+
+.right-square {
+    background-color: var(--secondary-color);
+    height: auto;
+    width: calc(35% - 20px);
+    padding: 20px;
+    z-index: 5;
+}
+
+.middle-right-square {
+    background-color: var(--tertiary-color);
+    height: auto;
+    width: calc(20% - 25px);
+    padding-right: 5rem;
+    margin-left: auto;
+    margin-right: -60px;
+    margin-top: 50px;
+    margin-bottom: auto;
+    border-radius: 25px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    z-index: 4;
+}
+
+.align-right {
+    padding-left: 10%;
+    margin-left: -5%;
+    width: 50%;
+    max-width: 90%;
+}
+
+
+.project-button {
+    background: linear-gradient(to bottom, var(--quaternary-color), var(--primary-color));
+    color: var(--text-color);
+    padding: 10px 58px;
+    border-radius: 51px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: background-color 0.4s;
+    font-size: 20px;
+    width: fit-content;
+}
+
+.project-button:hover {
+    background: linear-gradient(to bottom, #176370, #4cf3e5);
+}
+
+.project-button p {
+    margin: 0;
+}

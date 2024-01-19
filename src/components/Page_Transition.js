@@ -1,6 +1,7 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import '../css/styles.css';
+import '../css/Transition.css';
 
 export default function Page_Transition() {
     return (

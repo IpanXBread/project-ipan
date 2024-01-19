@@ -1,0 +1,193 @@
+/* All Skills */
+
+.align-right {
+    padding-left: 13%;
+    margin-left: -5%;
+    width: 50%;
+    max-width: 90%;
+}
+
+.position-container {
+    padding-left: 45px;
+    margin-top: -20px;
+  }
+
+/* Skills_Coding_Swipe.js */
+
+  .skills-container {
+    background-color: var(--tertiary-color);
+    height: 210px;
+    width: 69%;
+    margin-left: 20%;
+    margin-bottom: 150px;
+  }
+
+  /* Skills_Coding.js */
+
+.coding-container {
+    background-color: var(--shadow-color);
+    padding: 50px 75px 80px 40px;
+    margin-left: 80px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .coding-container-inside {
+    height: 500px;
+    width: 675px;
+  }
+
+  .bar-chart {
+    color: var(--primary-color);
+    font-size: 30px;
+    width: 100px;
+  }
+
+  /* Skills_Building_Content.js */
+
+  .build-container {
+    background-color: var(--tertiary-color);
+    padding: 10px;
+    margin: 50px 30px 30px;
+    border-radius: 50px;
+  }
+  
+  .build-container-middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .build-title-container {
+    background-color: var(--secondary-color);
+    min-width: auto;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    border-radius: 40px;
+    margin-left: 100px;
+    margin-top: -35px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    border: var(--tertiary-color) 15px solid;
+  }
+  
+  .build-container-inside {
+    background-color: var(--background-color);
+    height: auto;
+    width: 70%;
+    padding: 10px 0px 10px 0px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  .build-pictures {
+    width: 88%;
+  }
+  
+  .left-side-empty {
+    background-color: var(--background-color);
+    width: 35%;
+    height: 55px;
+    margin-left: -10px;
+    margin-top: -40px;
+  }
+  
+  .right-side-empty {
+    background-color: var(--background-color);
+    width: 35%;
+    max-width: 4000px;
+    height: 55px;
+    margin-right: -10px;
+    margin-top: -40px;
+  }
+  
+  .picture-size {
+    width: 95%;
+  }
+
+  /* Skills_Trading.js */
+
+  
+.trading-container {
+    background-color: var(--shadow-color);
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    /* justify-content: space-evenly; */
+  }
+  
+  .same-size {
+    height: auto;
+    width: calc(95% - 20px);
+    padding: 20px;
+    z-index: 5;
+  }
+  
+  .cuba-cuba{
+    width: 95%;
+  }
+
+  /* Skills_Infinite_Carousel.js */ 
+
+  .carousel {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+  }
+  
+  .carousel-slides {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    flex-shrink: 1;
+  }
+  
+  .carousel-slide {
+    position: relative;
+    min-width: 0;
+    flex-shrink: 0;
+  }
+  
+  .carousel-slide {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+  }
+  
+  .carousel-item-text {
+    white-space: nowrap;
+  }
+  
+  .carousel-item-img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .round {
+    padding: 30px 50px;
+    border-radius: 120px;
+  }
+  
+  .light-blue {
+    background-color: #d8f1ff;
+  }
+  
+  .pink {
+    background-color: #ffeaf0;
+  }
+  
+  .purpule {
+    background-color: #eae9ff;
+  }  
+

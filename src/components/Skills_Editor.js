@@ -1,4 +1,3 @@
-import '../css/styles.css';
 import Slider from 'react-slick';
 import React, { useState } from 'react';
 import 'slick-carousel/slick/slick.css';
@@ -12,9 +11,7 @@ import king from '../images/king.jpg';
 import rareclass from '../images/rare class.jpg';
 import klcc from '../images/klcc.jpg';
 import blender from '../images/blender.jpg';
-
-import sijil_spm from '../images/sijil_spm.png';
-import sijil_matrik from '../images/sijil_matrik.png';
+import '../css/styles.css';
 
 export default function Skills_Editor() {
 

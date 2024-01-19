@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../css/styles.css';
+import '../css/Parallax.css';
 
 export default function ParallaxPage() {
 

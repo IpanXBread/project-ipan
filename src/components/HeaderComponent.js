@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import HeaderContent from "./HeaderContent";
-import '../css/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDev } from '@fortawesome/free-brands-svg-icons';
 import { faToggleOn, faToggleOff } from '@fortawesome/free-solid-svg-icons';
+import '../css/Header.css';
+import '../css/styles.css';
 
 export default function HeaderComponent() {
     const storedMode = localStorage.getItem('themeMode');
@@ -17,19 +18,18 @@ export default function HeaderComponent() {
     };
 
     useEffect(() => {
-        // Set the theme on component mountaa
         document.body.classList.toggle('light-mode', isLightMode);
     }, [isLightMode]);
 
     return (
         <div className="space-between">
-            <div className="header-container center-horizontal center-vertical fixed">
+            <div className="header-container center-horizontal center-vertical">
                 <HeaderContent headerName="HOME" destinationURL="/home" />
                 <HeaderContent headerName="WORK" destinationURL="/work" />
                 <HeaderContent headerName="PROJECT" destinationURL="/project" />
                 <HeaderContent headerName="SKILL" destinationURL="/skills" />
             </div>
-            <div className="center-horizontal center-vertical fixed icon">
+            <div className="center-horizontal center-vertical icon">
                 <FontAwesomeIcon
                     icon={isLightMode ? faToggleOn : faToggleOff}
                     className="icon close-button"

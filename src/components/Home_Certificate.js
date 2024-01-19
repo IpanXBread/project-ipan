@@ -1,8 +1,9 @@
-import '../css/styles.css';
 import sijil_matrik_programming from '../images/sijil_matrik_programming.png';
 import sijil_matrik_pal from '../images/sijil_matrik_pal.png';
 import redhat1 from '../images/redhat1.png';
 import redhat2 from '../images/redhat2.png';
+import '../css/styles.css';
+import '../css/Home.css';
 
 export default function Home_Certificate() {
 
@@ -26,7 +27,7 @@ export default function Home_Certificate() {
     ];
 
     return (
-        <div className='education'>
+        <div className='home-content-container'>
             {/* Title */}
             <h1 className="font-bold">CERTIFICATE</h1>
 

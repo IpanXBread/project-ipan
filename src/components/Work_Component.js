@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import '../css/styles.css';
 import Tilt from "react-parallax-tilt";
+import '../css/styles.css';
 
 const Modal = ({ title, dateRange, image, description, closeModal }) => {
     return (

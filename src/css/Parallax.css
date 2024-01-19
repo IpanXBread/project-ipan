@@ -1,0 +1,110 @@
+/* Parallax_Mousemove.js */
+
+.parallax {
+    min-height: 100%;
+    overflow: hidden;
+    background-color: var(--background-color);
+  }
+  
+  .red-background {
+    background-color: #a82b2b;
+    padding-top: 10px;
+    margin-top: 15px;
+    height: 10px;
+    width: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .blue-background {
+    background-color: #1c325a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .front-layer,
+  .back-layer {
+    position: absolute;
+    pointer-events: none;
+  }
+  
+  .front-layer {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 92%;
+    height: 92%;
+  }
+  
+  .back-layer {
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 97%;
+    height: 97%;
+  }
+  
+  .front-layer div,
+  .back-layer div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .front-layer div {
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8);
+  }
+
+  /* ParallaxPage.js */
+
+  .Parallax {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .Parallax_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300%;
+    background-image: url('../images/1559254.webp');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .Parallax_background-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/kisspng-star-clip-art-shooting-star-png-transparent-background-5ab7bf943d69c3.4802820815219915722516.png');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+    background-color: rgba(37, 37, 37, 0.0);
+  }
+  
+  .Parallax_content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(37, 37, 37, 0.0);
+  }
+  
+  .parallax-container {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    background-color: transparent;
+  }
+  

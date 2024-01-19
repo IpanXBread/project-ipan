@@ -9,6 +9,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
 import '../css/styles.css';
+import '../css/Work.css';
 
 export default function WorkPage() {
 
@@ -124,7 +125,6 @@ export default function WorkPage() {
           options={options}
           init={init}
           loaded={particlesLoaded}
-          className='particle-container'
         >
         </Particles>
 

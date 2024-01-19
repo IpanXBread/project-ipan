@@ -1,7 +1,8 @@
-import '../css/styles.css';
 import React, { useEffect } from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import '../css/styles.css';
+import '../css/Skills.css';
 
 export default function Skills_Infinite_Carousel() {
 

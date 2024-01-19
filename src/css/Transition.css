@@ -1,0 +1,22 @@
+/* Page_Transition.js */
+
+.transition-page {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .transition-color1 {
+    z-index: 30;
+    background-color: var(--full-shadow-color);
+  }
+  
+  .transition-color2 {
+    z-index: 20;
+    background-color: var(--secondary-color);
+  }
+  
+  .transition-color3 {
+    z-index: 10;
+    background-color: var(--tertiary-color);
+  }

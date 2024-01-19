@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import Modal from './Modal';
+import Home_Modal from './Home_Modal';
 import Tilt from "react-parallax-tilt";
 import '../css/styles.css';
+import '../css/Home.css';
 
 export default function Home_Education() {
     const [modalOpen, setModalOpen] = useState(false);
@@ -17,12 +18,12 @@ export default function Home_Education() {
     }
 
     return (
-        <div className='education'>
+        <div className='home-content-container'>
             {/* Title */}
             <h1 className="font-bold">EDUCATION</h1>
 
             {/* Sort By Row For Each Education */}
-            <div className="horizontal space-evenly padding-left-right ">
+            <div className="space-evenly">
                 {/* SMKDABB */}
                 <Tilt>
                     <div className="gray-box-education">
@@ -37,7 +38,7 @@ export default function Home_Education() {
                         </div>
 
                         <div className="centered">
-                            <div class="download-button rajdhani" onClick={() => handleViewGradeButton("sijil_spm")}>
+                            <div class="education-button rajdhani" onClick={() => handleViewGradeButton("sijil_spm")}>
                                 <p className="one-line">View Grade</p>                        </div>
                         </div>
                     </div>
@@ -58,7 +59,7 @@ export default function Home_Education() {
                     </div>
 
                     <div className="centered">
-                        <div class="download-button rajdhani" onClick={() => handleViewGradeButton("sijil_matrik")}>
+                        <div class="education-button rajdhani" onClick={() => handleViewGradeButton("sijil_matrik")}>
                             <p className="one-line">View Grade</p>                        </div>
                     </div>
                 </div>
@@ -77,15 +78,15 @@ export default function Home_Education() {
                         <h4 style={{ fontWeight: 'lighter' }}>PNGK: 3.48</h4>
                     </div>
                     <div className="centered">
-                        <div class="download-button rajdhani" onClick={() => handleViewGradeButton("grade_uni")}>
+                        <div class="education-button rajdhani" onClick={() => handleViewGradeButton("grade_uni")}>
                             <p className="one-line">View Grade</p>                        </div>
                     </div>
                 </div>
                 </Tilt>
             </div>
 
-            {/* Modal */}
-            {modalOpen && <Modal level={selectedLevel} closeModal={closeModal} />}
+            {/* Home_Modal */}
+            {modalOpen && <Home_Modal level={selectedLevel} closeModal={closeModal} />}
         </div>
     );
 }

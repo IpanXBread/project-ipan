@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../css/styles.css';
+import '../css/Project.css';
 
 export default function Project_Component(props) {
     const { title, company, position, dateRange, image, language, description, align, link } = props;
@@ -17,7 +18,7 @@ export default function Project_Component(props) {
             <div className={`${align}-square`}>
                 <h3 className="one-line">♦ {company} ♦</h3>
                 <div className="position-container">
-                    <p className="white-text">{position}</p>
+                    <p>{position}</p>
                 </div>
                 <div className={`${image}`}></div>
                 <div className="horizontal">

@@ -1,49 +1,71 @@
-/* Modal.css */
+/* Home_Modal.js */
+
 .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999; /* Ensure it's on top of everything */
-  }
-  
-  .modal {
-    background: #1f1f1f; /* White background for the modal */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--shadow-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
 
-  .modal-button {
-    background-color: #006666;
-    color: #fff;
-    padding: 10px 60px;
-    border-radius: 35px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: background-color 0.3s;
-    display: inline-block;
-    font-size: 20px;
-    bottom: 0;
-    }
+.modal {
+  background: var(--background-color);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: -40px;
+  box-shadow: 0px 0px 10px var(--shadow-color);
+  width: auto;
+  max-width: 50%;
+  height: auto;
+  max-height: 85%;
+  z-index: 10000;
+}
 
-    .center {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+.modal-header {
+  display: flex;
+  justify-content: end;
+}
 
-      .gray-box-image {
-        background-color: rgba(0, 0, 0, 0.3);
-        padding: 20px;
-        margin: 20px;
-        border-radius: 10px;
-        height: auto;
-        width: auto;
-      }
+.modal-work {
+  background: var(--primary-color);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: -40px;
+  box-shadow: 0px 0px 10px var(--shadow-color);
+  width: auto;
+  height: auto;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: start;
+}
+
+.modal-close {
+  display: flex;
+  justify-content: end;
+}
+
+.gray-box-modal {
+  background-color: var(--shadow-color);
+  padding: 5px;
+  margin-top: -30px;
+  max-width: 70%;
+  max-height: 90%;
+  border-radius: 10px;
+  height: auto;
+}
+
+.modal-work-header {
+  display: flex;
+  justify-content: center;
+}
+
+.close-button {
+  cursor: pointer;
+}

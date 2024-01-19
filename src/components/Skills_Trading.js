@@ -1,6 +1,7 @@
-import '../css/styles.css';
 import tradingImage from '../images/trading.jpg';
 import tradingImage2 from '../images/trading2.png';
+import '../css/styles.css';
+import '../css/Skills.css';
 
 export default function Skills_Trading() {
 
