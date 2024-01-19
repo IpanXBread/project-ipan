@@ -22,7 +22,7 @@ export default function Skills_Coding() {
         datasets: [
             {
                 label: 'Proficiency',
-                data: [8, 8, 5, 4, 8, 9, 9, 10, 1, 1],
+                data: [8, 8, 5, 4, 9, 9, 10, 2, 1],
                 backgroundColor: '#216F79',
                 borderColor: 'rgba(0, 0, 0, 0.7)',
                 borderWidth: 2,

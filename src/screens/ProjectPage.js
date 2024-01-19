@@ -9,7 +9,7 @@ export default function ProjectPage() {
 
   const projects = {
     kaku: {
-      title: 'Ka***ku',
+      title: 'Kayaaku Wallet',
       company: 'Finexus International Sdn Bhd',
       position: 'Internship',
       dateRange: 'Sept 2023 ~ Feb 2024',

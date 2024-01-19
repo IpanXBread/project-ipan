@@ -12,7 +12,7 @@ export default function Skills_Trading() {
                     <div style={{ position: 'relative' }} className="cuba-cuba">
                         <img src={tradingImage2} alt="Trading" className="same-size"/>
                         <h4 className="raleway" style={{ position: 'absolute', top: '9%', left: '50%', transform: 'translate(-50%, -50%)' }}>
-                            I quit ady, haram 😔
+                            I quit already, haram 😔
                         </h4>
                     </div>
 

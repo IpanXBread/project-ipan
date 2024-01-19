@@ -329,7 +329,7 @@ body.light-mode {
 }
 
 .project-button {
-  background-color: var(--primary-color);
+  background: linear-gradient(to bottom,var(--quaternary-color), var(--primary-color));
   color: var(--text-color);
   padding: 10px 58px;
   border-radius: 51px;
@@ -355,12 +355,13 @@ body.light-mode {
 }
 
 .circle {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   background-color: var(--text-color);
   border-radius: 50%;
   position: absolute;
   left: 50%;
+  margin-top: -70px;
   transform: translateX(-50%);
   z-index: 5;
 }
@@ -723,7 +724,7 @@ body.light-mode {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 600px;
+  min-height: 650px;
 }
 
 .white-text {
@@ -1177,14 +1178,13 @@ body.light-mode {
 }
 
 .parallax {
-  min-height: 100vh;
-  position: relative;
+  min-height: 100%;
   overflow: hidden;
-  background-color: #0b2b31;
+  background-color: var(--background-color);
 }
 
 .red-background {
-  background-color: #ffffff;
+  background-color: #a82b2b;
   padding-top: 10px;
   margin-top: 15px;
   height: 10px;
