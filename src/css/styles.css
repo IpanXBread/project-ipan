@@ -23,6 +23,10 @@ body {
   background-color: var(--background-color);
 }
 
+html, body{
+  overflow-x: hidden;
+  }
+
 /* Light mode */
 body.light-mode {
   --text-color: rgb(4, 10, 14);
