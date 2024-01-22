@@ -115,3 +115,13 @@
     padding: 20px 20px 20px 20px;
     background-color: var(--primary-color);
   }
+
+  /* TABLET VIEW */
+@media (max-width: 768px) {
+
+}
+
+/* MOBILE VIEW */
+@media (max-width: 600px) {
+
+} 

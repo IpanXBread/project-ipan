@@ -91,3 +91,13 @@
 .modal-content {
   margin-top: 20px;
 }
+
+/* TABLET VIEW */
+@media (max-width: 768px) {
+
+}
+
+/* MOBILE VIEW */
+@media (max-width: 600px) {
+
+} 

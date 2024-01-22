@@ -2,16 +2,18 @@ import React, { useState, useEffect } from 'react';
 import HeaderContent from "./HeaderContent";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faToggleOn, faToggleOff, faBars } from '@fortawesome/free-solid-svg-icons';
+import { useViewport } from './ViewportContext';
 import '../css/Header.css';
 import '../css/styles.css';
 
 export default function HeaderComponent() {
     const storedMode = localStorage.getItem('themeMode');
-    const storedMobileView = localStorage.getItem('mobileView');
-    
+    const viewportWidth = useViewport();
+    const storedMobileView = localStorage.getItem(viewportWidth);
+
     const [isLightMode, setIsLightMode] = useState(storedMode === 'light');
     const [isMobile, setIsMobile] = useState(
-        storedMobileView === null ? window.innerWidth < 600 : JSON.parse(storedMobileView)
+        storedMobileView === null ? viewportWidth < 600 : JSON.parse(storedMobileView)
     );
     const [isDropMenuOpen, setIsDropMenuOpen] = useState(false);
 
@@ -22,15 +24,13 @@ export default function HeaderComponent() {
 
     // Handle Mobile/Web view
     useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth < 600);
-        };
-        handleResize();
-        window.addEventListener('resize', handleResize);
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
+        setIsMobile(viewportWidth < 600);
+    }, [viewportWidth]);
+
+    useEffect(() => {
+        console.log("viewportWidth : ", viewportWidth);
+        console.log("storedMobileView : ", storedMobileView);
+    }, [viewportWidth]);
     
     const toggleMode = () => {
         const newMode = !isLightMode ? 'light' : 'dark';
@@ -69,7 +69,7 @@ export default function HeaderComponent() {
                 </>
             ) : (
                 <div className="space-between">
-                    <div className="header-container center-horizontal center-vertical">
+                    <div className="header-container center-horizontal center-vertical" style={{marginTop:"-15px"}}>
                         <HeaderContent headerName="HOME" destinationURL="/home" />
                         <HeaderContent headerName="WORK" destinationURL="/work" />
                         <HeaderContent headerName="PROJECT" destinationURL="/project" />
@@ -79,7 +79,7 @@ export default function HeaderComponent() {
                         <FontAwesomeIcon
                             icon={isLightMode ? faToggleOn : faToggleOff}
                             className="icon close-button"
-                            style={{ marginTop: "-10px" }}
+                            style={{ marginTop: "-22px", marginRight: "20px"}}
                             id="toggleButton"
                             onClick={toggleMode}
                         />

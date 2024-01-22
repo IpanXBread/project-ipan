@@ -24,3 +24,13 @@
 .header-container-exit {
   transform: translateX(-100%);
 }
+
+/* TABLET VIEW */
+@media (max-width: 768px) {
+
+}
+
+/* MOBILE VIEW */
+@media (max-width: 600px) {
+
+} 

@@ -69,3 +69,13 @@
 .close-button {
   cursor: pointer;
 }
+
+/* TABLET VIEW */
+@media (max-width: 768px) {
+
+}
+
+/* MOBILE VIEW */
+@media (max-width: 600px) {
+
+} 

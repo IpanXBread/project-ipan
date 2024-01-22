@@ -133,3 +133,13 @@
 .project-button p {
     margin: 0;
 }
+
+/* TABLET VIEW */
+@media (max-width: 768px) {
+
+}
+
+/* MOBILE VIEW */
+@media (max-width: 600px) {
+
+} 

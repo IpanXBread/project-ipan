@@ -1,4 +1,3 @@
-
 /* Default styles (dark mode) */
 :root {
   --text-color: rgb(219, 232, 243);
@@ -23,9 +22,10 @@ body {
   background-color: var(--background-color);
 }
 
-html, body{
+html,
+body {
   overflow-x: hidden;
-  }
+}
 
 /* Light mode */
 body.light-mode {
@@ -165,7 +165,7 @@ body.light-mode {
 }
 
 .normal-text-size {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .fix-overflow-text {
@@ -247,11 +247,8 @@ body.light-mode {
 /* Icon */
 
 .icon {
-  margin-top: 6px;
-  margin-left: 7px;
-  margin-right: 7px;
-  margin-bottom: 1px;
-  z-index:10000;
+  margin: 6px 7px 1px 7px;
+  z-index: 10000;
 }
 
 .icon-link {
@@ -283,7 +280,7 @@ body.light-mode {
 .container {
   height: 400px;
   width: 400px;
-  margin-left: -15rem;
+  padding-left: 17%;
 }
 
 .make-it-bottom {
@@ -335,10 +332,84 @@ body.light-mode {
   opacity: 0;
 }
 
-/* MOBILE VIEW */
-@media (max-width: 600px) {
+/* TABLET VIEW */
+@media (max-width: 768px) {
+
+  .container {
+    padding-left: 14%;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  h5 {
+    font-size: 10px;
+  }
+
+  .big-text {
+    font-size: 30px;
+  }
+
   .normal-text-size {
     font-size: 14px;
     /* Adjust font size for smaller screens */
+  }
+}
+
+/* MOBILE VIEW */
+@media (max-width: 600px) {
+
+  h1 {
+    font-size: 21px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+
+  h5 {
+    font-size: 9px;
+  }
+
+  .big-text {
+    font-size: 20px;
+  }
+
+  .container {
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-top: -150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .home-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center !important;
+  }
+
+  .normal-text-size {
+    font-size: 10px;
+  }
+
+  .icon {
+    margin: 6px 3px 1px 3px;
   }
 }

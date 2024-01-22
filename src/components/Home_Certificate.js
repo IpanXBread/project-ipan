@@ -34,9 +34,9 @@ export default function Home_Certificate() {
             <div className="centered">
                 {certificates.map((certificate, index) => (
                     <div key={index} className="gray-box-certificate">
-                        <h2>{certificate.title}</h2>
+                        <h2 style={{marginLeft:"5px"}}>{certificate.title}</h2>
                         <div className="centered">
-                            <img src={certificate.imageName} alt="certificate" />
+                            <img src={certificate.imageName} alt="certificate" className="certificate-size"/>
                         </div>
                     </div>
                 ))}

@@ -281,3 +281,13 @@
   width: 200px;
   height: 200px;
 }
+
+/* TABLET VIEW */
+@media (max-width: 768px) {
+
+}
+
+/* MOBILE VIEW */
+@media (max-width: 600px) {
+
+} 

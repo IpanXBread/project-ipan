@@ -21,7 +21,7 @@ export default function Home_Exam() {
                     <div key={index} className="gray-box-exam">
                         <h2>{exam.title}</h2>
                         <div className="centered">
-                            <img src={exam.imageName} alt="exam" />
+                            <img src={exam.imageName} alt="exam" className="certificate-size"/>
                         </div>
                     </div>
                 ))}
