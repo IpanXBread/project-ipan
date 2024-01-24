@@ -414,6 +414,10 @@ p {
     font-size: 14px;
     /* Adjust font size for smaller screens */
   }
+
+  .up-text {
+    margin-top: -5px;
+}
 }
 
 /* MOBILE VIEW */
@@ -475,5 +479,8 @@ p {
     max-height: 40px;
   }
 
+  .coding-container-inside2 {
+    height: auto !important;
+  }
 
 }

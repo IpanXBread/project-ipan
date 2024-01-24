@@ -1,13 +1,16 @@
 import tradingImage from '../images/trading.jpg';
 import tradingImage2 from '../images/trading2.png';
+import { useMediaQuery } from 'react-responsive';
 import '../css/styles.css';
 import '../css/Skills.css';
 
 export default function Skills_Trading() {
 
+const isMobile = useMediaQuery({ maxWidth: 728 });
+
     return (
         <div className='add-bottom'>
-            <div className="position-container">
+             <div className={`position-container ${isMobile ? 'mobile-position2' : ''}`}>
                 <h1 className="quicksand big-text ">TRADING</h1>
                 <div className="trading-container">
                     <div style={{ position: 'relative' }} className="cuba-cuba">

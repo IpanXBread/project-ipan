@@ -56,7 +56,7 @@ export default function Skills_Coding() {
         },
         plugins: {
             legend: {
-                display: true,
+                display: isMobile ? false : true,
                 position: 'top',
                 labels: {
                     font: {
@@ -93,11 +93,13 @@ export default function Skills_Coding() {
                         className="bar-chart quicksand primary-color big-text coding-container-inside"
                     ></Bar>
                 </div>
-                <div className="coding-container-inside">
-                    <h2 className=" josefin-sans">From Me</h2>
-                    <parent className="fix-overflow-text quicksand spacing-text text-alignment-little-left primary-light-color justify-text customsize">
-                        To code efficiently, grasp <span className="bold-text">HOW</span> it works. Syntax mistakes? ChatGPT and StackOverflow are your pals. Know <span className="bold-text">WHERE</span> to find answers, <span className="bold-text">WHAT</span> questions to ask, and <span className="bold-text">WHY</span> solutions work. It's all about understanding coding.
-                    </parent>
+                <div className="coding-container-inside2">
+                    <div className="mobile-left-padding-only">
+                        <h2 className=" josefin-sans">From Me</h2>
+                        <parent className="fix-overflow-text quicksand spacing-text text-alignment-little-left primary-light-color justify-text customsize">
+                            To code efficiently, grasp <span className="bold-text">HOW</span> it works. Syntax mistakes? ChatGPT and StackOverflow are your pals. Know <span className="bold-text">WHERE</span> to find answers, <span className="bold-text">WHAT</span> questions to ask, and <span className="bold-text">WHY</span> solutions work. It's all about understanding coding.
+                        </parent>
+                    </div>
                 </div>
 
             </div>

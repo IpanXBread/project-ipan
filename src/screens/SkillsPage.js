@@ -15,7 +15,7 @@ export default function SkillsPage() {
       <header><HeaderComponent /></header>
 
       {/* Title */}
-      <div className="center-horizontal super-big-text tilt-prism">
+      <div className="center-horizontal super-big-text tilt-prism extra-up-n-down">
         <h1>SKILLS</h1>
       </div>
 
