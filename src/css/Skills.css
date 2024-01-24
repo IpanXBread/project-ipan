@@ -35,6 +35,10 @@
 
   /* Skills_Coding.js */
 
+  .customsize {
+    font-size: 30px;
+  }
+
 .coding-container {
     background-color: var(--shadow-color);
     padding: 50px 75px 80px 40px;
@@ -282,9 +286,62 @@
   height: 200px;
 }
 
+@media (max-width: 1300px) {
+  .coding-container-inside {
+    width: 505px;
+  }
+  .customsize {
+    font-size: 23px;
+  }
+
+  .coding-container {
+    padding: 50px 55px 80px 30px;
+    margin-left: 60px;
+  }
+}
+
+/* LAPTOP VIEW */
+@media (max-width: 1150px) {
+  .bar-chart {
+    width: 50px;
+  }
+  .coding-container-inside {
+    width: 475px;
+  }
+  .customsize {
+    font-size: 20px;
+  }
+  .coding-container {
+    padding: 50px 40px 80px 23px;
+    margin-left: 50px;
+  }
+}
+
+/* CUSTOM VIEW */
+@media (max-width: 1080px) {
+  .coding-container-inside {
+    width: 375px;
+  }
+  .customsize {
+    font-size: 15px;
+  }
+  span {
+    font-size: 19px;
+  }
+}
+
 /* TABLET VIEW */
 @media (max-width: 768px) {
-
+  .coding-container-inside {
+    width: 275px;
+  }
+  .customsize {
+    font-size: 15px;
+  }
+  .coding-container {
+    padding: 20px 20px 20px 0px;
+    margin-left: 35px;
+  }
 }
 
 /* MOBILE VIEW */

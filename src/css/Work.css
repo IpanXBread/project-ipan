@@ -92,12 +92,23 @@
   margin-top: 20px;
 }
 
+/* LAPTOP VIEW */
+@media (max-width: 1150px) {
+  .work-container {
+    min-height: 500px;
+  }
+}
+
 /* TABLET VIEW */
 @media (max-width: 768px) {
-
+  .work-container {
+    min-height: 400px;
+  }
 }
 
 /* MOBILE VIEW */
 @media (max-width: 600px) {
-
+  .work-container {
+    min-height: 350px;
+  }
 } 

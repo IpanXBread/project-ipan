@@ -154,6 +154,26 @@
 
 /* TABLET VIEW */
 @media (max-width: 768px) {
+
+  .space-evenly {
+    justify-content: center;
+  }
+
+  .home-content-container {
+    padding: 10px;
+  }
+
+  .gray-box-education {
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .light-gray-box {
+    background-color: var(--shadow-color);
+    margin: 0 -10px 0 -10px !important;
+  }
+
+
   .smkdabb {
     padding: 40px;
   }
@@ -167,7 +187,7 @@
   }
 
   .education-button {
-    padding: 6px 25px;
+    padding: 6px 45px;
     font-size: 15px;
   }
 

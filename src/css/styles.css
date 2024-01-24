@@ -146,11 +146,28 @@ body.light-mode {
 }
 
 .gray-hidden-text {
-  color: var(--text-less-color);
+  color: var(--text-even-less-color);
 }
 
 
 /* Text - Size & Position */
+
+h1 {
+  font-size: 100px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 22px;
+}
+
 .super-big-text {
   font-size: 50px;
 }
@@ -244,6 +261,8 @@ body.light-mode {
   margin-top: -25px;
 }
 
+.just-up {}
+
 /* Icon */
 
 .icon {
@@ -332,23 +351,55 @@ body.light-mode {
   opacity: 0;
 }
 
+/* EXTRA */
+.zindexplus {
+  z-index: 10000;
+}
+
+/* LAPTOP VIEW */
+@media (max-width: 1150px) {
+  .solat-time-logo {
+    padding: 115px;
+  }
+
+  .bold-text {
+    font-size: 23px;
+  }
+}
+
 /* TABLET VIEW */
 @media (max-width: 768px) {
+
+  .bold-text {
+    font-size: 20px;
+  }
+
+  .solat-time-logo {
+    padding: 85px;
+  }
+
+  .finexus {
+    padding: 75px;
+  }
 
   .container {
     padding-left: 14%;
   }
 
   h1 {
-    font-size: 25px;
+    font-size: 75px;
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   h3 {
     font-size: 15px;
+  }
+
+  p {
+    font-size: 13px;
   }
 
   h5 {
@@ -369,15 +420,19 @@ body.light-mode {
 @media (max-width: 600px) {
 
   h1 {
-    font-size: 21px;
+    font-size: 55px;
   }
 
   h2 {
-    font-size: 15px;
+    font-size: 25px;
   }
 
   h3 {
     font-size: 12px;
+  }
+
+  p {
+    font-size: 11px;
   }
 
   h5 {
@@ -411,5 +466,14 @@ body.light-mode {
 
   .icon {
     margin: 6px 3px 1px 3px;
+    width: 22px;
+    height: 22px;
   }
+
+  .make-it-bottom {
+    min-height: 40px;
+    max-height: 40px;
+  }
+
+
 }

@@ -1,7 +1,10 @@
 import { FaTimes } from 'react-icons/fa';
+import ImageZoom from 'react-image-zoom';
+
 import sijil_spm from '../images/sijil_spm.png';
 import sijil_matrik from '../images/sijil_matrik.png';
 // import sijil_uni from '../images/sijil_uni.png';
+
 import '../css/styles.css';
 import '../css/Modal.css';
 

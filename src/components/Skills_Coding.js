@@ -6,6 +6,7 @@ import {
     Legend
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
+import { useMediaQuery } from 'react-responsive';
 import '../css/styles.css';
 import '../css/Skills.css';
 
@@ -17,6 +18,8 @@ ChartJS.register(
 )
 
 export default function Skills_Coding() {
+
+    const isMobile = useMediaQuery({ maxWidth: 600 });
 
     const data = {
         labels: ['JavaScript', 'TypeScript', 'Java', 'Phyton', 'React', 'React Native', 'CSS', 'Tailwind', 'Bootstrap'],
@@ -72,7 +75,7 @@ export default function Skills_Coding() {
                 bottom: 20,
             },
         },
-        indexAxis: 'x',
+        indexAxis: isMobile ? 'y' : 'x',
         responsive: true,
         maintainAspectRatio: false,
     };
@@ -82,7 +85,7 @@ export default function Skills_Coding() {
             <div className="position-container">
                 <h1 className="quicksand big-text ">CODING LANGUAGE</h1>
             </div>
-            <div className="coding-container horizontal">
+            <div className="coding-container">
                 <div className="coding-container-inside">
                     <Bar
                         data={data}
@@ -92,9 +95,9 @@ export default function Skills_Coding() {
                 </div>
                 <div className="coding-container-inside">
                     <h2 className=" josefin-sans">From Me</h2>
-                    <h3 className="fix-overflow-text quicksand spacing-text text-alignment-little-left primary-light-color justify-text">
+                    <parent className="fix-overflow-text quicksand spacing-text text-alignment-little-left primary-light-color justify-text customsize">
                         To code efficiently, grasp <span className="bold-text">HOW</span> it works. Syntax mistakes? ChatGPT and StackOverflow are your pals. Know <span className="bold-text">WHERE</span> to find answers, <span className="bold-text">WHAT</span> questions to ask, and <span className="bold-text">WHY</span> solutions work. It's all about understanding coding.
-                    </h3>
+                    </parent>
                 </div>
 
             </div>

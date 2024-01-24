@@ -29,12 +29,12 @@ export default function Home_Certificate() {
     return (
         <div className='home-content-container'>
             {/* Title */}
-            <h1 className="font-bold">CERTIFICATE</h1>
+            <h2 className="font-bold tilt-prism" style={{paddingLeft:"10px", letterSpacing:"2px"}}>CERTIFICATE</h2>
 
             <div className="centered">
                 {certificates.map((certificate, index) => (
                     <div key={index} className="gray-box-certificate">
-                        <h2 style={{marginLeft:"5px"}}>{certificate.title}</h2>
+                        <h3 style={{marginLeft:"5px"}}>{certificate.title}</h3>
                         <div className="centered">
                             <img src={certificate.imageName} alt="certificate" className="certificate-size"/>
                         </div>

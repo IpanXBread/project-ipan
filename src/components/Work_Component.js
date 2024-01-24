@@ -13,7 +13,7 @@ const Modal = ({ title, dateRange, image, description, closeModal }) => {
 
                 {/* Company Title */}
                 <div className="modal-work-header">
-                    <h2>{title}</h2>
+                    <h3>{title}</h3>
                 </div>
 
                 {/* Logo */}
@@ -52,7 +52,7 @@ export default function Work_Component(props) {
         <>
             {!isModalOpen && (
                 <div className="quicksand work-title one-line" onClick={openModal}>
-                    <h2>{title}</h2>
+                    <h3>{title}</h3>
                 </div>
             )}
 

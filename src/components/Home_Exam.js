@@ -14,12 +14,12 @@ export default function Home_Exam() {
     return (
         <div className='home-content-container'>
             {/* Title */}
-            <h1 className="font-bold">SPECIAL EXAM</h1>
+            <h2 className="font-bold tilt-prism" style={{paddingLeft:"10px", letterSpacing:"2px"}}>SPECIAL EXAM</h2>
 
             <div className="centered">
                 {exams.map((exam, index) => (
                     <div key={index} className="gray-box-exam">
-                        <h2>{exam.title}</h2>
+                        <h3>{exam.title}</h3>
                         <div className="centered">
                             <img src={exam.imageName} alt="exam" className="certificate-size"/>
                         </div>

@@ -1,12 +1,16 @@
 import HeaderComponent from '../components/HeaderComponent';
 import FooterComponent from '../components/FooterComponent';
-import Project_Component from '../components/Project_Component';
+import Project_Component_Web from '../components/Project_Component_Web';
+import Project_Component_Mobile from '../components/Project_Component_Mobile';
 import Parallax_Mousemove from '../components/Parallax_Mousemove';
 import React, { useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import '../css/styles.css';
 import '../css/Project.css';
 
 export default function ProjectPage() {
+
+  const isMobile = useMediaQuery({ maxWidth: 600 });
 
   const projects = {
     kaku: {
@@ -61,17 +65,28 @@ export default function ProjectPage() {
         <div className="super-big-text tilt-prism">
           <h1>PROJECT</h1>
         </div>
-        <p className="rajdhani big-text-up">LONG-TERM PROJECTS</p>
+        <p className="rajdhani" style={{ marginTop: "-45px" }}>LONG-TERM PROJECTS</p>
       </div>
 
       {/* <Parallax_Mousemove/> */}
 
-      <div className="circle"></div>
-      <div className="vertical-line"></div>
+      {isMobile ? (
+        <>
+        <Project_Component_Mobile {...projects.kaku} />
+          <Project_Component_Mobile {...projects.solatTime} />
+          <Project_Component_Mobile {...projects.minecraft} />
+        </>
+      ) : (
+        <>
+          <div className="circle"></div>
+          <div className="vertical-line"></div>
 
-      <Project_Component {...projects.kaku} />
-      <Project_Component {...projects.solatTime} />
-      <Project_Component {...projects.minecraft} />
+          <Project_Component_Web {...projects.kaku} />
+          <Project_Component_Web {...projects.solatTime} />
+          <Project_Component_Web {...projects.minecraft} />
+        </>
+      )}
+
 
       <FooterComponent style={{ zIndex: 2 }} />
 

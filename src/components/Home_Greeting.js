@@ -22,19 +22,19 @@ export default function Home_Greeting() {
         <>
             {isMobile ? (
                 <div className='container'>
-                    <h3 className="quicksand"> ⸻ Hello</h3>
-                    <h1 className="chakra-petch big-text">I'm Irfan Imran</h1>
-                    <h3 className="chakra-petch primary-color">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A Software Developer</h3>
-                    <h5 className='thin quicksand text-less-color'>I am <Home_TypeAnimation /></h5>
+                    <h3 className="quicksand" style={{ margin: '8px 0 0 0' }} > ⸻ Hello</h3>
+                    <h1 className="chakra-petch big-text" style={{ margin: '8px 0 0 0' }} >I'm Irfan Imran</h1>
+                    <h3 className="chakra-petch primary-color" style={{ margin: '8px 0 0 0' }} >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A Software Developer</h3>
+                    <h5 className='thin quicksand text-less-color' style={{ margin: '8px 0 16px 0' }} >I am <Home_TypeAnimation /></h5>
                     <div class="download-cv rajdhani" onClick={() => downloadResume()}>
                         <p>Download Resume</p>
                     </div>
                     <div style={{padding:"10px"}}>
-                        <a className="icon-link" href="https://www.facebook.com/IpanXBread" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebook} className="icon" /></a>
-                        <a className="icon-link" href="https://www.instagram.com/ipanxbread" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} className="icon" /></a>
-                        <a className="icon-link" href="https://www.youtube.com/@ipanxbread" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faYoutube} className="icon" /></a>
-                        <a className="icon-link" href="https://www.tiktok.com/@ipanxbread" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTiktok} className="icon" /></a>
-                        <a className="icon-link" href="https://github.com/IpanXBread" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} className="icon" /></a>
+                        <a className="icon-link" href="https://www.facebook.com/IpanXBread" target="_blank" rel="noopener noreferrer" style={{padding:"7px"}}><FontAwesomeIcon icon={faFacebook} className="icon" /></a>
+                        <a className="icon-link" href="https://www.instagram.com/ipanxbread" target="_blank" rel="noopener noreferrer" style={{padding:"7px"}}><FontAwesomeIcon icon={faInstagram} className="icon" /></a>
+                        <a className="icon-link" href="https://www.youtube.com/@ipanxbread" target="_blank" rel="noopener noreferrer" style={{padding:"7px"}}><FontAwesomeIcon icon={faYoutube} className="icon" /></a>
+                        <a className="icon-link" href="https://www.tiktok.com/@ipanxbread" target="_blank" rel="noopener noreferrer" style={{padding:"7px"}}><FontAwesomeIcon icon={faTiktok} className="icon" /></a>
+                        <a className="icon-link" href="https://github.com/IpanXBread" target="_blank" rel="noopener noreferrer" style={{padding:"7px"}}><FontAwesomeIcon icon={faGithub} className="icon" /></a>
                     </div>
                 </div>
             ) : (

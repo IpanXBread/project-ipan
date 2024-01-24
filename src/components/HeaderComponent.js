@@ -26,11 +26,6 @@ export default function HeaderComponent() {
     useEffect(() => {
         setIsMobile(viewportWidth < 600);
     }, [viewportWidth]);
-
-    useEffect(() => {
-        console.log("viewportWidth : ", viewportWidth);
-        console.log("storedMobileView : ", storedMobileView);
-    }, [viewportWidth]);
     
     const toggleMode = () => {
         const newMode = !isLightMode ? 'light' : 'dark';

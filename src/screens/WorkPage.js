@@ -125,21 +125,22 @@ export default function WorkPage() {
           options={options}
           init={init}
           loaded={particlesLoaded}
+          className="zindexplus"
         >
         </Particles>
 
         {/* Title */}
-        <div className="work-container ">
+        <div className="work-container">
           <div className="super-big-text tilt-prism"><h1>WORK</h1></div>
-          <p className="big-text-up gray-hidden-text">(The workplace is clickable)</p>
+          <h3 className="gray-hidden-text" style={{marginTop:"-40px"}}>(The workplace is clickable)</h3>
         </div>
 
         <div className="vertical-long-line"></div>
 
         <div>
           {/* 2023 */}
-          <div className="front-box rajdhani super-big-text ">
-            <p className="">2023</p>
+          <div className="front-box rajdhani ">
+            <h2 className="">2023</h2>
           </div>
 
           <div className="front-box">
@@ -148,12 +149,12 @@ export default function WorkPage() {
 
           {/* 2024 */}
           <div className="front-box rajdhani super-big-text ">
-            <p>2024</p>
+            <h2>2024</h2>
           </div>
 
           {/* 2025 */}
           <div className="front-box rajdhani super-big-text ">
-            <p>2025</p>
+            <h2>2025</h2>
           </div>
 
           <div className="front-box">

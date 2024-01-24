@@ -28,7 +28,7 @@ export default function Home_Education() {
                 <>
                     <div className='home-content-container'>
                         {/* Title */}
-                        <h1 className="font-bold">EDUCATION</h1>
+                        <h2 className="font-bold tilt-prism" style={{paddingLeft:"10px", letterSpacing:"2px"}}>EDUCATION</h2>
 
                         {/* Sort By Row For Each Education */}
                         <div className="space-evenly">
@@ -112,7 +112,7 @@ export default function Home_Education() {
                 <>
                     <div className='home-content-container'>
                         {/* Title */}
-                        <h1 className="font-bold">EDUCATION</h1>
+                        <h2 className="font-bold tilt-prism" style={{paddingLeft:"10px", letterSpacing:"2px"}}>EDUCATION</h2>
 
                         {/* Sort By Row For Each Education */}
                         <div className="space-evenly">

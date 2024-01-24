@@ -12,15 +12,17 @@ export default function HeaderContent(props) {
     ...headerContentStyle,
     color: isActive ? 'var(--primary-color)' : 'var(--text-color)',
     fontFamily: 'var(--josefin-sans)',
-    padding: "15px 0px 15px 0px",
+    padding: "2px 0px 2px 0px",
+    display: "flex",
+    justifyContent: "flex-start",
   };
 
   return (
     <>
       {isMobile ? (
         <a href={props.destinationURL} style={style} className="text-reset horizontal">
-          <p className="josefin-sans" style={{marginTop:"10px", marginRight: "10px"}}>✦</p>
-          <p className="josefin-sans">{props.headerName}</p>
+          <p className="josefin-sans" style={{ marginTop: "7px", marginRight: "10px" }}>✦</p>
+          <p className="josefin-sans" style={{display:"flex", alignItems:"center"}}>{props.headerName}</p>
         </a>
       ) : (
         <a href={props.destinationURL} style={style} className="text-reset">
@@ -32,5 +34,5 @@ export default function HeaderContent(props) {
 }
 
 const headerContentStyle = {
-  margin: '-25px 15px',
+  margin: '0px 15px 0px 15px',
 };
