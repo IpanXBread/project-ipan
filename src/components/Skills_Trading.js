@@ -16,7 +16,7 @@ const isMobile = useMediaQuery({ maxWidth: 728 });
                     <div style={{ position: 'relative' }} className="cuba-cuba">
                         <img src={tradingImage2} alt="Trading" className="same-size"/>
                         <h4 className="raleway" style={{ position: 'absolute', top: '9%', left: '50%', transform: 'translate(-50%, -50%)' }}>
-                            I quit already, haram 😔
+                            I like to study trading, but i dont trade because its haram 😔
                         </h4>
                     </div>
 

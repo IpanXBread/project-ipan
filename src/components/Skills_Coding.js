@@ -90,7 +90,7 @@ export default function Skills_Coding() {
                     <Bar
                         data={data}
                         options={options}
-                        className="bar-chart quicksand primary-color big-text coding-container-inside"
+                        className="quicksand primary-color big-text coding-container-inside"
                     ></Bar>
                 </div>
                 <div className="coding-container-inside2">

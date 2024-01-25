@@ -37,7 +37,7 @@
   padding: 20px;
   margin-top: -40px;
   box-shadow: 0px 0px 10px var(--shadow-color);
-  width: auto;
+  width: 1200px;
   height: auto;
   z-index: 10000;
   display: flex;
@@ -68,6 +68,20 @@
 
 .close-button {
   cursor: pointer;
+}
+
+/* DESKTOP VIEW */
+@media (max-width: 1320px) {
+  .modal-work {
+    width: 850px;
+  }
+}
+
+/* LAPTOP VIEW */
+@media (max-width: 1150px) {
+  .modal-work {
+    width: 750px;
+  }
 }
 
 /* TABLET VIEW */

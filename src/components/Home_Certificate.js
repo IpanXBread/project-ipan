@@ -10,18 +10,22 @@ export default function Home_Certificate() {
     const certificates = [
         {
             title: "'Problem Solving And Programming Challenges' Competition",
+            desc: "",
             imageName: sijil_matrik_programming,
         },
         {
             title: 'Program Peer-Assisted Learning (PAL)',
+            desc: "Guide & help others in Mathematic & Computer Science subject",
             imageName: sijil_matrik_pal,
         },
         {
             title: 'Red Hat System Administration I (RH124)',
+            desc: "",
             imageName: redhat1,
         },
         {
             title: 'Red Hat System Administration II (RH134)',
+            desc: "",
             imageName: redhat2,
         },
     ];
@@ -35,6 +39,7 @@ export default function Home_Certificate() {
                 {certificates.map((certificate, index) => (
                     <div key={index} className="gray-box-certificate">
                         <h3 style={{marginLeft:"5px"}}>{certificate.title}</h3>
+                        <p style={{color:"gray"}}>{certificate.desc}</p>
                         <div className="centered">
                             <img src={certificate.imageName} alt="certificate" className="certificate-size"/>
                         </div>

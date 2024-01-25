@@ -132,15 +132,16 @@ export default function WorkPage() {
         {/* Title */}
         <div className="work-container">
           <div className="super-big-text tilt-prism"><h1>WORK</h1></div>
-          <h3 className="gray-hidden-text" style={{marginTop:"-40px"}}>(The workplace is clickable)</h3>
+          <h3 className="gray-hidden-text" style={{ marginTop: "-40px" }}>(The workplace is clickable)</h3>
         </div>
 
         <div className="vertical-long-line"></div>
+        <div className="work-circle"></div>
 
         <div>
           {/* 2023 */}
           <div className="front-box rajdhani ">
-            <h2 className="">2023</h2>
+            <h2>2023</h2>
           </div>
 
           <div className="front-box">
@@ -148,7 +149,7 @@ export default function WorkPage() {
           </div>
 
           {/* 2024 */}
-          <div className="front-box rajdhani super-big-text ">
+          <div className="front-box rajdhani">
             <h2>2024</h2>
           </div>
 
