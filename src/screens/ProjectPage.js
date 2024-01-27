@@ -62,7 +62,7 @@ export default function ProjectPage() {
       {/* Title */}
 
       <div className="project-container">
-        <div className="super-big-text tilt-prism">
+        <div className="tilt-prism">
           <h1>PROJECT</h1>
         </div>
         <p className="rajdhani" style={{ marginTop: "-45px" }}>LONG-TERM PROJECTS</p>

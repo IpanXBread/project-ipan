@@ -52,7 +52,7 @@ export default function Work_Component(props) {
         <>
             {!isModalOpen && (
                 <div className="quicksand work-title one-line" onClick={openModal}>
-                    <h3>{title}</h3>
+                    {isModalOpen ? <h3>.</h3> : <h3>{title}</h3>}
                 </div>
             )}
 

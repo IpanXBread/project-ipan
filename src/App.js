@@ -10,12 +10,13 @@ import NoPage from "./screens/NoPage";
 import ParallaxPage from "./screens/ParallaxPage";
 import ProjectPage from "./screens/ProjectPage";
 import SkillsPage from "./screens/SkillsPage";
+import AboutPage from "./screens/AboutPage";
 
 export const DrawerContext = createContext("");
 
 export default function App() {
   return (
-    <ThemeProvider> {/* Wrap your entire App with the ThemeProvider */}
+    <ThemeProvider>
       <div>
         <ViewportProvider>
           <BrowserRouter>
@@ -26,7 +27,8 @@ export default function App() {
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/parallax" element={<ParallaxPage />} />
               <Route path="/project" element={<ProjectPage />} />
-              <Route path="/skills" element={<SkillsPage />} />
+              <Route path="/skills" element={<SkillsPage />} /> 
+              <Route path="/aboutme" element={<AboutPage />} /> 
               <Route path="*" element={<NoPage />} />
             </Routes>
           </BrowserRouter>

@@ -10,7 +10,7 @@ export default function Skills_Building() {
     return (
         <div className='add-bottom'>
             <div className={`position-container ${isMobile ? 'mobile-position' : ''}`}>
-                <h1 className="quicksand big-text ">BUILDING</h1>
+                <h2 className="quicksand">BUILDING</h2>
                 <div className="quicksand up-text" style={{ color: "gray" }}>most of my free time spent on using my creativity.</div>
             </div>
             <div>

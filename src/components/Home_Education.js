@@ -41,11 +41,11 @@ export default function Home_Education() {
                                             <h3 className="centered" style={{ textAlign: 'center', display: "flex", marginLeft: "10px" }}>SMK Dato' Abu Bakar Baginda</h3>
                                         </div>
                                         <div className="centered light-gray-box" style={{ marginRight: "10px" }}>
-                                            <h4>2014 ~ 2018</h4>
+                                            <p>2014 ~ 2018</p>
                                         </div>
 
                                         <div>
-                                            <h4 style={{ fontWeight: 'lighter' }}>SPM: 4A 4B 1C</h4>
+                                            <p style={{ fontWeight: 'lighter' }}>SPM: 4A 4B 1C</p>
                                         </div>
 
                                         <div className="centered">
@@ -65,11 +65,11 @@ export default function Home_Education() {
                                             <h3 className="centered" style={{ textAlign: 'center', display: "flex", marginLeft: "10px" }}>Kolej Matrikulasi Selangor</h3>
                                         </div>
                                         <div className="centered light-gray-box" style={{ marginRight: "10px" }}>
-                                            <h4>2019 ~ 2020</h4>
+                                            <p>2019 ~ 2020</p>
                                         </div>
                                         <div className="make-it-bottom">
-                                            <h4 style={{ fontWeight: 'lighter', marginBottom: '-15px' }}>CGPA: 3.79</h4>
-                                            <h4 style={{ fontWeight: 'lighter' }}>MUET: Band 4</h4>
+                                            <p style={{ fontWeight: 'lighter', marginBottom: '-15px' }}>CGPA: 3.79</p>
+                                            <p style={{ fontWeight: 'lighter' }}>MUET: Band 4</p>
                                         </div>
                                         <div className="centered">
                                             <div className="education-button rajdhani" onClick={() => handleViewGradeButton("sijil_matrik")}>
@@ -88,11 +88,11 @@ export default function Home_Education() {
                                             <h3 className="centered" style={{ textAlign: 'center', display: "flex", marginLeft: "10px" }}>Universiti Kebangsaan Malaysia</h3>
                                         </div>
                                         <div className="centered light-gray-box" style={{ marginRight: "10px" }}>
-                                            <h4>2020 ~ 2024</h4>
+                                            <p>2020 ~ 2024</p>
                                         </div>
                                         <div className="make-it-bottom">
-                                            <h4 style={{ fontWeight: 'lighter', marginBottom: '-15px' }}>Bachelor's Degree in Computer Science</h4>
-                                            <h4 style={{ fontWeight: 'lighter' }}>PNGK: 3.48</h4>
+                                            <p style={{ fontWeight: 'lighter', marginBottom: '-15px' }}>Bachelor's Degree in Computer Science</p>
+                                            <p style={{ fontWeight: 'lighter' }}>PNGK: 3.48</p>
                                         </div>
                                         <div className="centered">
                                             <div className="education-button rajdhani" onClick={() => handleViewGradeButton("grade_uni")}>
@@ -122,11 +122,11 @@ export default function Home_Education() {
                                     <div className="smkdabb"></div>
                                     <h3 className="centered" style={{ textAlign: 'center' }}>SMK Dato' Abu Bakar Baginda</h3>
                                     <div className="centered light-gray-box">
-                                        <h4>2014 ~ 2018</h4>
+                                        <p>2014 ~ 2018</p>
                                     </div>
 
                                     <div className="make-it-bottom">
-                                        <h4 style={{ fontWeight: 'lighter' }}>SPM: 4A 4B 1C</h4>
+                                        <p style={{ fontWeight: 'lighter' }}>SPM: 4A 4B 1C</p>
                                     </div>
 
                                     <div className="centered">
@@ -142,12 +142,12 @@ export default function Home_Education() {
                                     <div className="kms"></div>
                                     <h3 className="centered" style={{ textAlign: 'center' }}>Kolej Matrikulasi Selangor</h3>
                                     <div className="centered light-gray-box">
-                                        <h4>2019 ~ 2020</h4>
+                                        <p>2019 ~ 2020</p>
                                     </div>
 
                                     <div className="make-it-bottom">
-                                        <h4 style={{ fontWeight: 'lighter', marginBottom: '-15px' }}>CGPA: 3.79</h4>
-                                        <h4 style={{ fontWeight: 'lighter' }}>MUET: Band 4</h4>
+                                        <p style={{ fontWeight: 'lighter', marginBottom: '-15px' }}>CGPA: 3.79</p>
+                                        <p style={{ fontWeight: 'lighter' }}>MUET: Band 4</p>
                                     </div>
 
                                     <div className="centered">
@@ -163,11 +163,11 @@ export default function Home_Education() {
                                     <div className="UKM2"></div>
                                     <h3 className="centered" style={{ textAlign: 'center' }}>Universiti Kebangsaan Malaysia</h3>
                                     <div className="centered light-gray-box">
-                                        <h4>2020 ~ 2024</h4>
+                                        <p>2020 ~ 2024</p>
                                     </div>
                                     <div className="make-it-bottom">
-                                        <h4 style={{ fontWeight: 'lighter', marginBottom: '-15px' }}>Bachelor's Degree in Computer Science</h4>
-                                        <h4 style={{ fontWeight: 'lighter' }}>PNGK: 3.48</h4>
+                                        <p style={{ fontWeight: 'lighter', marginBottom: '-15px' }}>Bachelor's Degree in Computer Science</p>
+                                        <p style={{ fontWeight: 'lighter' }}>PNGK: 3.48</p>
                                     </div>
                                     <div className="centered">
                                         <div class="education-button rajdhani" onClick={() => handleViewGradeButton("grade_uni")}>

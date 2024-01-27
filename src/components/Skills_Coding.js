@@ -83,14 +83,14 @@ export default function Skills_Coding() {
     return (
         <div className=''>
             <div className="position-container">
-                <h1 className="quicksand big-text ">CODING LANGUAGE</h1>
+                <h2 className="quicksand">CODING LANGUAGE</h2>
             </div>
             <div className="coding-container">
                 <div className="coding-container-inside">
                     <Bar
                         data={data}
                         options={options}
-                        className="quicksand primary-color big-text coding-container-inside"
+                        className="quicksand primary-color coding-container-inside"
                     ></Bar>
                 </div>
                 <div className="coding-container-inside2">

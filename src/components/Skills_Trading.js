@@ -11,7 +11,7 @@ const isMobile = useMediaQuery({ maxWidth: 728 });
     return (
         <div className='add-bottom'>
              <div className={`position-container ${isMobile ? 'mobile-position2' : ''}`}>
-                <h1 className="quicksand big-text ">TRADING</h1>
+                <h2 className="quicksand">TRADING</h2>
                 <div className="trading-container">
                     <div style={{ position: 'relative' }} className="cuba-cuba">
                         <img src={tradingImage2} alt="Trading" className="same-size"/>

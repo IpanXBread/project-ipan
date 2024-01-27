@@ -32,8 +32,11 @@
 }
 
 .modal-work {
-  background: var(--primary-color);
-  border-radius: 10px;
+  border-color: var(--text-color);
+  border-width: 10px;
+  border-style: outset;
+  background: var(--tertiary-color);
+  border-radius: 30px;
   padding: 20px;
   margin-top: -40px;
   box-shadow: 0px 0px 10px var(--shadow-color);
@@ -80,16 +83,20 @@
 /* LAPTOP VIEW */
 @media (max-width: 1150px) {
   .modal-work {
-    width: 750px;
+    width: 375px;
   }
 }
 
 /* TABLET VIEW */
 @media (max-width: 768px) {
-
+  .modal-work {
+    width: 275px;
+  }
 }
 
 /* MOBILE VIEW */
 @media (max-width: 600px) {
-
+  .modal-work {
+    width: 225px;
+  }
 } 

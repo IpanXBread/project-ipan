@@ -21,8 +21,8 @@ export default function Project_Component_Web(props) {
                 </div>
                 <div className={`${image}`}></div>
                 <div className="horizontal">
-                    <h4>Language:</h4>
-                    <h3 style={{ marginLeft: '10px', textDecoration: 'underline' }}>{language}</h3>
+                    <p>Language:</p>
+                    <p style={{ marginLeft: '10px', textDecoration: 'underline' }}>{language}</p>
                 </div>
                 <div className="horizontal">
                     <p>Description: </p>

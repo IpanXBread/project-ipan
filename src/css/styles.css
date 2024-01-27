@@ -165,20 +165,7 @@ h3 {
 }
 
 p {
-  font-size: 22px;
-}
-
-.super-big-text {
-  font-size: 50px;
-}
-
-.big-text-up {
-  font-size: 25px;
-  margin-top: -55px;
-}
-
-.big-text {
-  font-size: 40px;
+  font-size: 17px;
 }
 
 .normal-text-size {
@@ -398,6 +385,8 @@ p {
     font-size: 15px;
   }
 
+
+
   p {
     font-size: 13px;
   }
@@ -406,9 +395,7 @@ p {
     font-size: 10px;
   }
 
-  .big-text {
-    font-size: 30px;
-  }
+
 
   .normal-text-size {
     font-size: 14px;
@@ -435,6 +422,8 @@ p {
     font-size: 12px;
   }
 
+
+
   p {
     font-size: 11px;
   }
@@ -443,9 +432,7 @@ p {
     font-size: 9px;
   }
 
-  .big-text {
-    font-size: 20px;
-  }
+
 
   .container {
     padding-left: 0%;

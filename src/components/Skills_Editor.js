@@ -72,7 +72,7 @@ export default function Skills_Editor() {
             <div className="video-container">
 
                 <div className="position-container">
-                    <h1 className="quicksand big-text ">VIDEO EDITOR  </h1>
+                    <h2 className="quicksand">VIDEO EDITOR  </h2>
                     <div className="quicksand up-text" style={{ color: "gray" }}>(this infinite carousel is not beautiful yet)</div>
                 </div>
 
