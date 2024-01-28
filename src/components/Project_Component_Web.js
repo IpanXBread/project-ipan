@@ -4,6 +4,12 @@ import '../css/Project.css';
 
 export default function Project_Component_Web(props) {
     const { title, company, position, dateRange, image, language, description, align, link } = props;
+
+    const handleShowMessage = (event) => {
+        event.preventDefault();
+        alert('Page not done yet');
+      };
+
     const renderMiddleSquare = (align, title) => (
         <div className={`middle-${align}-square`}>
             <h3 className="square-big-text chakra-petch">{title}</h3>
@@ -26,12 +32,12 @@ export default function Project_Component_Web(props) {
                 </div>
                 <div className="horizontal">
                     <p>Description: </p>
-                    <p style={{ marginLeft: '10px', textAlign:"justify"}}>{description}</p>
+                    <p style={{ marginLeft: '10px', textAlign: "justify" }}>{description}</p>
                 </div>
 
-                <a className="" style={{ color: "lightgray", textDecoration: "none" }} href={link} target="_blank" rel="noopener noreferrer">
-                    <div className="project-button one-line"><p>Explore {title}</p></div>
-                </a>
+                <a className="" style={{ color: "lightgray", textDecoration: "none" }} href={link} target="_blank" rel="noopener noreferrer" onClick={(event) => (link ? null : handleShowMessage(event))}>
+      <div className="project-button one-line"><p>Explore {title}</p></div>
+    </a>
 
             </div>
         </>

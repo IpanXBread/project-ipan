@@ -2,9 +2,8 @@ import React, { useEffect, useState } from 'react';
 import HeaderComponent from '../components/HeaderComponent';
 import FooterComponent from '../components/FooterComponent';
 import Work_Component from '../components/Work_Component';
-import Work_Particles from '../components/Work_Particles';
 
-import { DrawerContext } from "../App";
+import { useMediaQuery } from 'react-responsive';
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
@@ -13,7 +12,11 @@ import '../css/Work.css';
 
 export default function WorkPage() {
 
+  const isMobile = useMediaQuery({ maxWidth: 600 });
   const [init, setInit] = React.useState(false);
+
+  const baseTopValue = isMobile ? 575 : 850;
+  const calculateTopValue = (index) => baseTopValue + (index - 1) * (isMobile ? 400 : 500);
 
   React.useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -119,7 +122,6 @@ export default function WorkPage() {
       <header><HeaderComponent /></header>
 
       <body style={{ margin: '0' }}>
-
         <Particles
           id="particles"
           options={options}
@@ -130,9 +132,11 @@ export default function WorkPage() {
         </Particles>
 
         {/* Title */}
-        <div className="work-container">
-          <div className="tilt-prism"><h1>WORK</h1></div>
-          <h3 className="gray-hidden-text" style={{ marginTop: "-40px" }}>(The workplace is clickable)</h3>
+        <div className="tilt-prism big-title-position ">
+          <div>
+            <h1>WORK</h1>
+            <p className="rajdhani center-horizontal under-h1" style={{ color: "gray" }}>The workplace is clickable</p>
+          </div>
         </div>
 
         <div className="vertical-long-line"></div>
@@ -140,25 +144,25 @@ export default function WorkPage() {
 
         <div>
           {/* 2023 */}
-          <div className="front-box rajdhani ">
+          <div className="front-box rajdhani " style={{ top: `${calculateTopValue(1)}px` }}>
             <h2>2023</h2>
           </div>
 
-          <div className="front-box">
+          <div className="front-box" style={{ top: `${calculateTopValue(2)}px` }}>
             <Work_Component {...work.finexus} />
           </div>
 
           {/* 2024 */}
-          <div className="front-box rajdhani">
+          <div className="front-box rajdhani" style={{ top: `${calculateTopValue(3)}px` }}>
             <h2>2024</h2>
           </div>
 
           {/* 2025 */}
-          <div className="front-box rajdhani">
+          <div className="front-box rajdhani" style={{ top: `${calculateTopValue(4)}px` }}>
             <h2>2025</h2>
           </div>
 
-          <div className="front-box">
+          <div className="front-box" style={{ top: `${calculateTopValue(5)}px` }}>
             <Work_Component {...work.petronas} />
           </div>
 

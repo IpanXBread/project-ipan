@@ -28,7 +28,7 @@
     position: absolute;
     left: 50%;
     top: 725px;
-    bottom: -1700px;
+    bottom: -2510px;
     transform: translateX(-50%);
     z-index: 2;
 }
@@ -139,7 +139,8 @@
     }
 
     .vertical-line {
-        top: 590px;
+        top: 650px;
+        bottom: -2100px;
     }
 }
 
@@ -150,11 +151,12 @@
     }
 
     .circle {
-        margin-top: -15px;
+        margin-top: -45px;
     }
     
     .vertical-line {
-        top: 300px;
+        top: 570px;
+        bottom: -1900px;
     }
 }
 

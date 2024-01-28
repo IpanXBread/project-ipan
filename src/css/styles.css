@@ -154,6 +154,7 @@ body.light-mode {
 
 h1 {
   font-size: 100px;
+  letter-spacing: 10px;
 }
 
 h2 {
@@ -205,6 +206,16 @@ p {
 
 
 /* General - Position(Flex) */
+
+.big-title-position {
+  padding: 150px 0px 270px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.under-h1 {
+  margin-top: -80px;
+}
 
 .centered {
   display: flex;
@@ -352,6 +363,11 @@ p {
   .bold-text {
     font-size: 23px;
   }
+
+  .big-title-position {
+    padding: 130px 0px 220px 0px;
+  }
+
 }
 
 /* TABLET VIEW */
@@ -385,7 +401,9 @@ p {
     font-size: 15px;
   }
 
-
+  .big-title-position {
+    padding: 110px 0px 240px 0px;
+  }
 
   p {
     font-size: 13px;
@@ -404,7 +422,13 @@ p {
 
   .up-text {
     margin-top: -5px;
-}
+  }
+
+  
+  .under-h1 {
+    margin-top: -60px;
+  }
+
 }
 
 /* MOBILE VIEW */
@@ -432,7 +456,9 @@ p {
     font-size: 9px;
   }
 
-
+  .big-title-position {
+    padding: 110px 0px 180px 0px;
+  }
 
   .container {
     padding-left: 0%;
@@ -468,6 +494,10 @@ p {
 
   .coding-container-inside2 {
     height: auto !important;
+  }
+
+  .under-h1 {
+    margin-top: -40px;
   }
 
 }

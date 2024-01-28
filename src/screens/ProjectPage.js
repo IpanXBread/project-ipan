@@ -22,7 +22,7 @@ export default function ProjectPage() {
       language: 'TypeScript',
       description: 'Working on frontend development for both web view and mobile view.',
       align: 'left',
-      link: 'https://project-ipan.vercel.app/error404',
+      link: '',
     },
     solatTime: {
       title: 'Solat Time',
@@ -33,7 +33,7 @@ export default function ProjectPage() {
       language: 'JavaScript',
       description: 'Individual projects that involves taking data from API in real time and store the data using Realtime Firebase.',
       align: 'right',
-      link: 'https://project-ipan.vercel.app/error404',
+      link: '',
     },
     minecraft: {
       title: 'Minecraft Server',
@@ -44,7 +44,18 @@ export default function ProjectPage() {
       language: 'Java',
       description: 'Configure my own laptop into Ubuntu Linux, set connections from LAN to WAN, set static IP (DHCP reservation), enable port forwarding, using custom DDNS, enable outside players from anywhere to have access to my server.',
       align: 'left',
-      link: 'https://project-ipan.vercel.app/error404',
+      link: '',
+    },
+    lrgs: {
+      title: 'LRGS - Hand Of Sport',
+      company: 'Universiti Kebangsaan Malaysia',
+      position: 'Student',
+      dateRange: 'June 2020 ~ March 2021', // not sure
+      image: 'handofsport',
+      language: 'HTML & PHP',
+      description: 'Using the database of phpMyAdmin, creating my work given by UKM, I have created this totally functional website, full score mark was given during this test.',
+      align: 'right',
+      link: 'https://lrgs.ftsm.ukm.my/users/a181464/PTFinal/login_interface.php',
     },
   };
 
@@ -60,21 +71,21 @@ export default function ProjectPage() {
       <header><HeaderComponent /></header>
 
       {/* Title */}
-
-      <div className="project-container">
-        <div className="tilt-prism">
+      <div className="tilt-prism big-title-position ">
+        <div>
           <h1>PROJECT</h1>
+          <p className="rajdhani center-horizontal under-h1">LONG-TERM PROJECTS</p>
         </div>
-        <p className="rajdhani" style={{ marginTop: "-45px" }}>LONG-TERM PROJECTS</p>
       </div>
 
       {/* <Parallax_Mousemove/> */}
 
       {isMobile ? (
         <>
-        <Project_Component_Mobile {...projects.kaku} />
+          <Project_Component_Mobile {...projects.kaku} />
           <Project_Component_Mobile {...projects.solatTime} />
           <Project_Component_Mobile {...projects.minecraft} />
+          <Project_Component_Mobile {...projects.lrgs} />
         </>
       ) : (
         <>
@@ -84,6 +95,7 @@ export default function ProjectPage() {
           <Project_Component_Web {...projects.kaku} />
           <Project_Component_Web {...projects.solatTime} />
           <Project_Component_Web {...projects.minecraft} />
+          <Project_Component_Web {...projects.lrgs} />
         </>
       )}
 
