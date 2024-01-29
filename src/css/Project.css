@@ -113,15 +113,24 @@
 }
 
 
-.project-button {
-    background: linear-gradient(to bottom, var(--quaternary-color), var(--primary-color));
-    color: var(--text-color);
+.project-button,
+.project-button-null {
     padding: 10px 20px;
     border-radius: 51px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
     cursor: pointer;
     transition: background-color 0.4s;
     width: fit-content;
+}
+
+.project-button {
+    background: linear-gradient(to bottom, var(--quaternary-color), var(--primary-color));
+    color: var(--text-color);
+}
+
+.project-button-null {
+    background: linear-gradient(to bottom, var(--secondary-color), var(--tertiary-color));
+    color: var(--text-even-less-color);
 }
 
 .project-button:hover {
@@ -153,7 +162,7 @@
     .circle {
         margin-top: -45px;
     }
-    
+
     .vertical-line {
         top: 570px;
         bottom: -1900px;
@@ -166,7 +175,8 @@
         min-height: 350px;
     }
 
-    .left-square, .right-square {
+    .left-square,
+    .right-square {
         width: calc(55% - 20px);
     }
 

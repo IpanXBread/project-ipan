@@ -26,8 +26,8 @@ export default function ProjectPage() {
     },
     solatTime: {
       title: 'Solat Time',
-      company: 'Universiti Kebangsaan Malaysia',
-      position: 'Final Year Project',
+      company: 'Universiti Kebangsaan Malaysia - FYP',
+      position: 'Final Year Student',
       dateRange: 'Sept 2022 ~ March 2023', // not sure
       image: 'solat-time-logo',
       language: 'JavaScript',
@@ -47,8 +47,8 @@ export default function ProjectPage() {
       link: '',
     },
     lrgs: {
-      title: 'LRGS - Hand Of Sport',
-      company: 'Universiti Kebangsaan Malaysia',
+      title: 'Hand Of Sport',
+      company: 'Universiti Kebangsaan Malaysia - LRGS',
       position: 'Student',
       dateRange: 'June 2020 ~ March 2021', // not sure
       image: 'handofsport',

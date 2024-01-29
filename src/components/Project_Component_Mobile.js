@@ -8,7 +8,7 @@ export default function Project_Component_Mobile(props) {
     const handleShowMessage = (event) => {
         event.preventDefault();
         alert('Page not done yet');
-      };
+    };
 
     const renderMiddleSquare = (align, title) => (
         <div className={`middle-${align}-square`}>
@@ -36,7 +36,7 @@ export default function Project_Component_Mobile(props) {
                 </div>
 
                 <a className="" style={{ color: "lightgray", textDecoration: "none" }} href={link} target="_blank" rel="noopener noreferrer" onClick={(event) => (link ? null : handleShowMessage(event))}>
-                    <div className="project-button one-line"><p>Explore {title}</p></div>
+                    <div className={`project-button ${link ? '' : 'project-button-null'} one-line`}><p>Explore {title}</p></div>
                 </a>
 
             </div>
