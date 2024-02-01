@@ -82,7 +82,7 @@ export default function Skills_Editor() {
                             <div key={index} className="video-box" onClick={() => handleClick(video.link)}>
                                 <img src={video.imageSrc} className="centered carousel-each-video" alt="no imagou yet" />
                             </div>
-                            <p>hel</p>
+                            {/* <p>hel</p> */}
                         </div>
                     ))}
                 </div>

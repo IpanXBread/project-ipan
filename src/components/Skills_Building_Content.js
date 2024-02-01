@@ -48,8 +48,6 @@ export default function Skills_Building_Content(props) {
                             <Slider {...settings}>
                                 <img src={oriental} className="picture-size" />
                                 <img src={fantasy} className="picture-size" />
-                                <img src={oriental} className="picture-size" />
-                                <img src={fantasy} className="picture-size" />
                             </Slider>
                         </div>
 

@@ -5,7 +5,7 @@ import { useMediaQuery } from 'react-responsive';
 
 export default function Skills_Building() {
     const isMobile = useMediaQuery({ maxWidth: 728 });
-    const builds = ["Oriental Theme", "Fantasy Theme", "Idk Theme", "idk2 theme"];
+    const builds = ["Oriental Theme", "Fantasy Theme"];
 
     return (
         <div className='add-bottom'>

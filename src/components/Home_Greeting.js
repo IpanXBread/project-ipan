@@ -1,5 +1,6 @@
 import Home_TypeAnimation from './Home_TypeAnimation';
 import resumeIpan from '../images/resume_ipan_2024.png';
+import resumeIpan2 from '../images/resume_ipan_2024_2.0.png'
 import { useMediaQuery } from 'react-responsive';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faFacebook, faInstagram, faYoutube, faTiktok, faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -11,8 +12,8 @@ export default function Home_Greeting() {
 
     const downloadResume = () => {
         const link = document.createElement('a');
-        link.href = resumeIpan;
-        link.download = 'resume_ipan_2024.png';
+        link.href = resumeIpan2;
+        link.download = 'resume_ipan_2024_2.0.png';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);

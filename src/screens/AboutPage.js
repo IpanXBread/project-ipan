@@ -12,8 +12,9 @@ export default function AboutPage() {
     <div>
       <header><HeaderComponent /></header>
 
-      <div className="tilt-prism big-title-position">
-        <h1>ABOUT ME</h1>
+      <div className=" big-title-position">
+        <h1 className="tilt-prism">ABOUT ME</h1>
+        <p>this page is not done yet</p>
       </div>
 
       {/* <Custom_Cursor /> */}
