@@ -5,6 +5,7 @@ import Home_Greeting from '../components/Home_Greeting';
 import Home_Education from '../components/Home_Education';
 import Home_Certificate from '../components/Home_Certificate';
 import Home_Exam from '../components/Home_Exam';
+import myself from '../images/me_removedbg.png';
 import '../css/Home.css';
 
 export default function HomePage() {
@@ -13,6 +14,7 @@ export default function HomePage() {
       <HeaderComponent />
       <div className="home-container">
         <Home_Greeting />
+        {/* <img src={myself}/> */}
       </div>
       <Home_Education />
       <Home_Certificate />

@@ -64,7 +64,7 @@ export default function HeaderComponent() {
                                     <HeaderContent headerName="WORK" destinationURL="/work" />
                                     <HeaderContent headerName="PROJECT" destinationURL="/project" />
                                     <HeaderContent headerName="SKILL" destinationURL="/skills" />
-                                    <HeaderContent headerName="ABOUT ME" destinationURL="/aboutme" />
+                                    {/* <HeaderContent headerName="ABOUT ME" destinationURL="/aboutme" /> */}
                                 </div>
                             )}
                         </div>
@@ -77,7 +77,7 @@ export default function HeaderComponent() {
                         <HeaderContent headerName="WORK" destinationURL="/work" />
                         <HeaderContent headerName="PROJECT" destinationURL="/project" />
                         <HeaderContent headerName="SKILL" destinationURL="/skills" />
-                        <HeaderContent headerName="ABOUT" destinationURL="/aboutme" />
+                        {/* <HeaderContent headerName="ABOUT" destinationURL="/aboutme" /> */}
                     </div>
                     <div className="center-horizontal center-vertical icon">
                         <FontAwesomeIcon

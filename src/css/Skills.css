@@ -429,7 +429,7 @@ coding-container-inside2 {
   .build-container{
     border-radius: 30px;
     height: 150px;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
   }
 
   .left-side-empty, .right-side-empty {

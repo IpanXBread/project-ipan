@@ -26,7 +26,7 @@ export default function SkillsPage() {
 
       <Skills_Building />
 
-      <Skills_Trading />
+      {/* <Skills_Trading /> */}
 
       <div className="add-bottom">
         <p className="raleway normal-text-size add-top center-horizontal">You've reached the end of the list</p>

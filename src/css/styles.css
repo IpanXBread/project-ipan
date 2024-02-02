@@ -321,6 +321,13 @@ p {
   background-repeat: no-repeat;
 }
 
+.hos {
+  background-image: url('../images/hos.png');
+  padding: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .finexus {
   background-image: url('../images/finexus.png');
   padding: 90px;

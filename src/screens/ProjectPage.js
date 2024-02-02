@@ -5,6 +5,7 @@ import Project_Component_Mobile from '../components/Project_Component_Mobile';
 import Parallax_Mousemove from '../components/Parallax_Mousemove';
 import React, { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
+import hos from '../images/hos.png';
 import '../css/styles.css';
 import '../css/Project.css';
 
@@ -51,9 +52,9 @@ export default function ProjectPage() {
       company: 'Universiti Kebangsaan Malaysia - LRGS',
       position: 'Student',
       dateRange: 'June 2020 ~ March 2021', // not sure
-      image: 'handofsport',
+      image: 'hos',
       language: 'HTML & PHP',
-      description: 'Using the database of phpMyAdmin, creating my work given by UKM, I have created this totally functional website, full score mark was given during this test.',
+      description: 'Using the database of phpMyAdmin, this robust online store was created. Feel free to log in using the email & password available on the image above. Please do not change anything in the system.',
       align: 'right',
       link: 'https://lrgs.ftsm.ukm.my/users/a181464/PTFinal/login_interface.php',
     },
